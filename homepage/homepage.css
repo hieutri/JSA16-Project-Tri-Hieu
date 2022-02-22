@@ -95,42 +95,38 @@ a{
 .slider{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .slide-container{
     display: flex;
     overflow: hidden;
 }
 .slide-container img{
-    max-width: 100%;
+    transition: 1s ease-in-out;
 }
 .radio-container{
     display: none;
 }
-.navigation-manual{
+.slider-button-container{
+    width: 97%;
     position: absolute;
-    width: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.navigation-manual label{
-    padding: 6px;
-    opacity: 0.5;
-    border: 2px solid #ddd;
+.slider-button-container button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
     border-radius: 900px;
-    margin-bottom: 20px;
-    cursor: pointer;
+    border: 2px solid #ddd;
+    background: none;
+    color: #ddd;
+    transition: 0.4s ease-in-out;
 }
-.navigation-manual label:hover{
-    opacity: 1;
-    transition: 0.5s;
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -50%;
-}
-#radio3:checked ~ .first{
-    margin-left: -100%;
+.slider-button-container button:hover{
+    background: #8071b3;
+    border: #8071b3;
 }
