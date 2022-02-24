@@ -10,8 +10,8 @@ nextBtn.addEventListener("click", () => {
     counter++;
     container.style.transform = "translateX(" + (counter * -100) + "%)"
     console.log(counter);
-    if(counter >= 5){
-        counter = 0;
+    if(counter > 5){
+        counter = 1;
     }
 })
 

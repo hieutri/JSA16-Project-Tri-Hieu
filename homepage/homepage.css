@@ -102,7 +102,7 @@ a{
 .slide-container{
     width: 100%;
     display: flex;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .slide-container img{
     transition:1s ease-in-out;
