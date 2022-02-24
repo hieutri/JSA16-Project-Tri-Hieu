@@ -4,21 +4,27 @@ const pic3 = document.getElementById("pic3");
 const pic4 = document.getElementById("pic4");
 const pic5 = document.getElementById("pic5");
 
-const prevBtn = document.getElementById("prevBtn");
+const container = document.getElementById("slide-container");
+const img = document.querySelectorAll("#slide-container img");
+
 const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 
-let x = 0;
-let i;
+let counter = 0;
+nextBtn.addEventListener("click", () => {
+    counter++;
+    console.log(counter);
+    container.style.transform = "translateX(" + (counter * -100) + "%)"
+    if(counter >= 5){
+        let counter = 1; 
+    }
+})
 
-function next(){
-    pic1.style.marginLeft = "-100%";
-    i = x + 1
-    console.log(i);
-}
-function prev(){
-    pic1.style.marginLeft = "0%";
-}
-nextBtn.addEventListener("click", next)
-prevBtn.addEventListener("click", prev)
-
-
+prevBtn.addEventListener("click" , () => {
+    counter--; 
+    console.log(counter);
+    container.style.transform = "translateX(" + (counter * -100) + "%)"
+    if(counter <= -1){
+        let counter = 5
+    }
+})

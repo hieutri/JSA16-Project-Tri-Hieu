@@ -1,0 +1,6 @@
+.container{
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+}
