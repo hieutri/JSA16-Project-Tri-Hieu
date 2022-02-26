@@ -5,21 +5,16 @@ const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 
 var counter = 1;
-container.style.transform  = "translateX(-100%)"
 nextBtn.addEventListener("click", () => {
+    if (counter >= img.length -1) return;
     counter++;
     container.style.transform = "translateX(" + (counter * -100) + "%)"
     console.log(counter);
-    if(counter > 5){
-        counter = 1;
-    }
 })
 
 prevBtn.addEventListener("click" , () => {
+    if (counter <= 0) return;
     counter--; 
     container.style.transform = "translateX(" + (counter * -100) + "%)"
     console.log(counter);
-    if(counter <= 0){
-        counter = 5;
-    }
 })
