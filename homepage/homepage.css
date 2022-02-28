@@ -190,7 +190,10 @@ a{
 }
 .product{
     width: 20%;
-}.product-img{
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.product-img{
     overflow: hidden;
     display: inline-flex;
     width: 100%;
@@ -203,14 +206,26 @@ a{
 .product-img:hover img{
     transform: scale(1.1);
 }
+.product-info{
+    padding: 10px;
+}
 .product-name{
-    font-size: 15px;
+    font-size: 14px;
+    height: 40px;
 }
 .product-price{
-    font-size: 15px;
+    font-size: 14px;
     color: #8071b3;
 }
 /*product end*/
+/* top seller */
+.top-seller{
+    padding: 20px 0px;
+}
+
+.top-seller-container .product-row:nth-child(2){
+    margin-top: 20px;
+}
 
 @media only screen and (max-width: 1235px){
     .wrapper{
