@@ -1,3 +1,5 @@
+
+//slider script
 const container = document.getElementById("slide-container");
 const img = document.querySelectorAll("#slide-container img");
 
@@ -18,3 +20,4 @@ prevBtn.addEventListener("click" , () => {
     container.style.transform = "translateX(" + (counter * -100) + "%)"
     console.log(counter);
 })
+//slider end
