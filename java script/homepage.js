@@ -1,23 +1,24 @@
+const slider = document.querySelector(".slide-container");
+const img = document.querySelectorAll(".slide-container img");
 
-//slider script
-const container = document.getElementById("slide-container");
-const img = document.querySelectorAll("#slide-container img");
-
-const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
 var counter = 1;
+slider.style.transform = 'translateX(-100%)';
 nextBtn.addEventListener("click", () => {
-    if (counter >= img.length -1) return;
-    counter++;
-    container.style.transform = "translateX(" + (counter * -100) + "%)"
-    console.log(counter);
+    counter ++;
+    slider.style.transform = 'translateX(' + (counter * -100) + '%)';
+    if(img[counter].id === 'firstClone'){
+        counter = img.length - counter;
+        slider.style.transform = 'translateX(' + (counter * -100) + '%)';
+    }
 })
-
-prevBtn.addEventListener("click" , () => {
-    if (counter <= 0) return;
-    counter--; 
-    container.style.transform = "translateX(" + (counter * -100) + "%)"
-    console.log(counter);
+prevBtn.addEventListener("click", () => {
+    counter --;
+    slider.style.transform = 'translateX(' + (counter * -100) + '%)';
+    if(img[counter].id === 'lastClone'){
+        counter = img.length -2;
+        slider.style.transform = 'translateX(' + (counter * -100) + '%)';
+    }
 })
-//slider end

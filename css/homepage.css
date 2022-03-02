@@ -11,9 +11,20 @@
 a{
     text-decoration: none;
 }
-.tittle{
-    text-align: center;
+.tittle-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+.tittle{
+    width: 580px;
+    text-align: center;
+}
+.line{
+    width: 100%;
+    height: 0;
+    border: 1px solid black;
 }
 /* header */
 .header{
@@ -74,6 +85,10 @@ a{
     margin: 0px 20px;
     color: #000;
     font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+.header-menu .wrapper a:hover{
+    color: #8071b3;
 }
 @media only screen and (max-width: 825px){
     .search input{
@@ -91,47 +106,56 @@ a{
 /* slider */
 .slider{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
     overflow: hidden;
+    position: relative;
+}
+.slider:hover #prevBtn{
+    display: inline-flex;
+}
+.slider:hover #nextBtn{
+    display: inline-flex;
 }
 .slide-container{
-    width: 100%;
     display: flex;
     transition: 0.2s ease-in-out;
 }
 .slide-container img{
-    transition:1s ease-in-out;
     max-width: 100%;
 }
 .slider-button-container{
-    width: 97%;
-    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
 }
-.slider-button-container button{
-    display: inline-flex;
+#prevBtn, #nextBtn{
+    cursor: pointer;
+    position: absolute;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    font-size: 30px;
+    font-size: 35px;
     border-radius: 900px;
     border: 2px solid #fff;
     background: none;
     color: #fff;
-    opacity: 0;
-}
-.slider:hover .slider-button-container button{
+    margin: 0px 20px;
     transition: 0.2s ease-in-out;
-    opacity: 1;   
 }
-.slider-button-container button:hover{
+#nextBtn:hover{
     background: #8071b3;
-    transition: 0.2s ease-in;
-    border: #8071b3;
+    border: 2px solid #8071b3 ;
+}
+#prevBtn:hover{
+    background: #8071b3;
+    border: 2px solid #8071b3 ;
+}
+#nextBtn{
+    right: 0;
 }
 
 /* product line */
@@ -171,6 +195,18 @@ a{
 }
 
 /*newest product */
+.view-all{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.view-all a{
+    color: #000;
+    transition: 0.2s ease-in-out;
+}
+.view-all a:hover{
+    color: #8071b3;
+}
 .newest-product{
     padding: 20px 0px;
     background: #f5f5f5;
@@ -203,7 +239,7 @@ a{
     height: 100%;
     transition: 0.2s ease-in-out;
 }
-.product-img:hover img{
+.product:hover .product-img img{
     transform: scale(1.1);
 }
 .product-info{
@@ -231,9 +267,25 @@ a{
 .accessories{
     padding: 20px 0px;
 }
-
-
-
+/*footer*/
+.footer{
+    background: #ddd;
+    padding: 20px 0px;
+}
+.footer .wrapper{
+    background: #ddd;
+    display: flex;
+    align-items: center;
+}
+.footer .wrapper a{
+    color: #000;
+    margin: 0px 5px;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+}
+.footer .wrapper a:hover{
+    color: #8071b3;
+}
 @media only screen and (max-width: 1235px){
     .wrapper{
         width: 95%;

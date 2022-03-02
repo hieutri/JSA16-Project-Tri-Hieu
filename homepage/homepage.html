@@ -5,59 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="/css/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 
     <div class="header">
+
         <div class="header-search">
             <div class="wrapper">
+
                 <h1>KBShop</h1>
+
                 <div class="search">
                     <input type="text" placeholder="Search...">
                     <button><i class="fa fa-search"></i></button>
                 </div>
+
                 <div class="header-icon-container">
                     <button herf="#" id="bell"><i class="fa fa-bell"></i></button>
                     <button herf="#" id="user"><i class="fa fa-user"></i></button>
                     <button herf="#" id="cart"><i class="fa fa-shopping-cart"></i></button>
                 </div>
+
             </div>
         </div>
+
         <div class="header-responsive-search">
             
         </div>
+
         <div class="header-menu">
+
             <div class="wrapper">
                 <a href="#">HOME</a>
                 <a href="#">SHOP</a>
                 <a href="#">ABOUT</a>
                 <a href="#">SUPPORT</a>
             </div>
+
         </div>
     </div>
 
     <div class="slider">
-        <div id="slide-container" class="slide-container">
-            <img id="pic1" src="/homepage slide picture/1.jpg" alt="">
-            <img id="pic2" src="/homepage slide picture/2.jpg" alt="">
-            <img id="pic3" src="/homepage slide picture/3.jpg" alt="">
-            <img id="pic4" src="/homepage slide picture/4.jpg" alt="">
-            <img id="pic5" src="/homepage slide picture/5.jpg" alt="">
+        <div class="slide-container">
+            <img id="lastClone" src="homepage slide picture/5.jpg" alt="">
+            <img id="pic1" src="homepage slide picture/1.jpg" alt="">
+            <img id="pic2" src="homepage slide picture/2.jpg" alt="">
+            <img id="pic3" src="homepage slide picture/3.jpg" alt="">
+            <img id="pic4" src="homepage slide picture/4.jpg" alt="">
+            <img id="pic5" src="homepage slide picture/5.jpg" alt="">
+            <img id="firstClone" src="homepage slide picture/1.jpg" alt="">
         </div>
-        <div class="slider-button-container">
-            <button id="prevBtn"> < </button>
-            <button id="nextBtn"> > </button>
-        </div>
+        <span id="prevBtn"> < </span>
+        <span id="nextBtn"> > </span>
     </div>
-
+    
     <div class="product-line">
         <div class="wrapper">
-            <h2 class="tittle">Product Line</h2>
+            <div class="tittle-container">
+                <span class="line"></span>
+                <h2 class="tittle">Product Line</h2>
+                <span class="line"></span>
+            </div>
             <div class="product-line-container">
                 <div class="product-line-content">
                     <img src="https://akkogear.com.vn/wp-content/uploads/2021/11/Akko_index_blackpink.jpg">
@@ -74,7 +88,11 @@
 
     <div class="newest-product">
         <div class="wrapper">
-            <h2 class="tittle">Newest Product</h2>
+            <div class="tittle-container">
+                <span class="line"></span>
+                <h2 class="tittle">Newest Product</h2>
+                <span class="line"></span>
+            </div>
             <div class="newest-product-container">
 
                 <div class="product-row">
@@ -137,7 +155,9 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="view-all">
+                    <a href="#">View All</a>
+                </div>
                 
             </div>
         </div>
@@ -145,7 +165,11 @@
     
     <div class="top-seller">
         <div class="wrapper">
-            <h2 class="tittle">Top Seller</h2>
+            <div class="tittle-container">
+                <span class="line"></span>
+                <h2 class="tittle">Top Seller</h2>
+                <span class="line"></span>
+            </div>
             <div class="top-seller-container">
 
                 <div class="product-row">
@@ -208,16 +232,70 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="view-all">
+                    <a href="#">View All</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="accessories">
         <div class="wrapper">
-            <h2 class="tittle">Accessories</h2>
+
+            <div class="tittle-container">
+                <span class="line"></span>
+                <h2 class="tittle">Accessories</h2>
+                <span class="line"></span>
+            </div>
+
+            <div class="accessories-container">
+                <div class="product-row">
+                    <div class="product">
+                        <div class="product-img"><img src="https://akkogear.com.vn/wp-content/uploads/2022/02/akko-cs-switch-sakura-ava-247x296.jpg"></div>
+                        <div class="product-info">
+                            <div class="product-name">AKKO CS Switch – Sakura (45 switch)</div>
+                            <div class="product-price">270.000đ</div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img"><img src="https://akkogear.com.vn/wp-content/uploads/2022/02/akko-cs-switch-sakura-ava-247x296.jpg"></div>
+                        <div class="product-info">
+                            <div class="product-name">AKKO CS Switch – Sakura (45 switch)</div>
+                            <div class="product-price">270.000đ</div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img"><img src="https://akkogear.com.vn/wp-content/uploads/2022/02/akko-cs-switch-sakura-ava-247x296.jpg"></div>
+                        <div class="product-info">
+                            <div class="product-name">AKKO CS Switch – Sakura (45 switch)</div>
+                            <div class="product-price">270.000đ</div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img"><img src="https://akkogear.com.vn/wp-content/uploads/2022/02/akko-cs-switch-sakura-ava-247x296.jpg"></div>
+                        <div class="product-info">
+                            <div class="product-name">AKKO CS Switch – Sakura (45 switch)</div>
+                            <div class="product-price">270.000đ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/unlovable___/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCbVKJEOkNl4FIqxtis5CZug" class="fa fa-youtube-play"></a>
+            <a href="https://twitter.com/playboyhadong" class="fa fa-twitter"></a>
+        </div>
+    </div>
+    
 
     <script src="/java script/homepage.js"></script>
 </body>
