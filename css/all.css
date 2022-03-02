@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    background: #fff;
+    top: 0;
+    z-index: 1;
+}
+.header-search .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.header-search .wrapper h1{
+    width: 100px;
+}
+.header-icon-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.header-icon-container a{
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.header-icon-container a:hover{
+    color: #8071b3;
+}
+.search{
+    display: inline-flex;
+    align-items: center;
+    border: 1px #ddd solid;
+    border-radius: 5px;
+}
+.search input{
+    background: #ddd;
+    width: 400px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+.search button{
+    background: #ddd;
+    border: none;
+    padding: 10px;
+}
+.header-menu{
+    background: #ddd;
+}
+.header-menu .wrapper{
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.header-menu .wrapper a{ 
+    margin: 0px 20px;
+    color: #000;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+.header-menu .wrapper a:hover{
+    color: #8071b3;
+}
+.footer{
+    background: #ddd;
+    padding: 20px 0px;
+}
+.footer .wrapper{
+    background: #ddd;
+    display: flex;
+    align-items: center;
+}
+.footer .wrapper a{
+    color: #000;
+    margin: 0px 5px;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+}
+.footer .wrapper a:hover{
+    color: #8071b3;
+}
+@media only screen and (max-width: 1235px){
+    .wrapper{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 825px){
+    .search input{
+        background: #ddd;
+        width: 200px;
+        border: none;
+        outline: none;
+        padding: 10px 10px;
+    }
+}
