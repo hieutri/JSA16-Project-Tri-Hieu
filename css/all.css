@@ -15,6 +15,10 @@
     background: #fff;
     top: 0;
     z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header-search{
+    position: relative;
 }
 .header-search .wrapper{
     display: flex;
@@ -34,10 +38,14 @@
     font-size: 25px;
     color: #000;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
 }
-.header-icon-container a:hover{
-    color: #8071b3;
+#cart-container{
+    display: none;
+    position: absolute;
+    margin-top: 35px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #000;
 }
 .search{
     display: inline-flex;
@@ -76,7 +84,125 @@
 .header-menu .wrapper a:hover{
     color: #8071b3;
 }
+@media only screen and (max-width: 950px){
+    .search input{
+        background: #ddd;
+        width: 300px;
+        border: none;
+        outline: none;
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 370px){
+    .header-menu .wrapper a{ 
+        margin: 0px 10px;
+    }
+}
+/*responsive header*/
+.header-responsive-search{
+    display: inline-flex;
+}
+.header-responsive-search input{
+    position: relative;
+    width: 150px;
+    outline: none;
+    padding: 5px 10px;
+    border: none;
+    background: #ddd;
+}
+.header-responsive-search button{
+    cursor: pointer;
+    background: #ddd;
+    outline: none;
+    padding: 5px;
+    border: none;
+}
+.responsive-navigation-button{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+.header-responsive-menu a{ 
+    display: block;
+    color: #000;
+    font-size: 14px;
+    margin: 10px 0px;
+    text-align: end;
+}
+.header-responsive-icon-container a{
+    color: #000;
+    font-size: 17px;
+}
+.header-responsive-menu a:hover, .header-responsive-icon-container a:hover{
+    color: #8071b3;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.header-responsive-navigation-container{
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    animation-name: slideRight;
+    animation-duration: 0.4s;
+}
+#close{
+    display: inline;
+    font-size: 35px;
+    padding: 0px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.2s ease-in-out;
+    animation-name: slideTop;
+    animation-duration: 0.2s;
+}
+#close:hover{
+    color: #fff;
+}
+.header-responsive-navigation{
+    z-index: 1;
+    overflow: auto;
+    display: none;
+    justify-content: space-between;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    animation-name: fade;
+    animation-duration: 0.2s;
+}
+@keyframes fade{
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+@keyframes slideRight{
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
+}
+@keyframes slideTop{
+    from {transform: translateY(10%);}
+    to {transform: translateY(0%);}
+}
+@media only screen and (max-width: 850px){
+    .responsive-navigation-button{
+        display: block;
+    }
+    .search, .header-icon-container, .header-menu{
+        display: none;
+    }
+}
+@media only screen and (max-width: 320px){
+    .header-responsive-navigation-container{
+        padding: 10px;
+    }
+    .header-responsive-search input{
+        width: 100px;
+    }
+}
+/*footer*/
 .footer{
+    position: relative;
     background: #ddd;
     padding: 20px 0px;
 }
@@ -94,17 +220,8 @@
 .footer .wrapper a:hover{
     color: #8071b3;
 }
-@media only screen and (max-width: 1235px){
+@media only screen and (max-width: 1250px){
     .wrapper{
         width: 95%;
-    }
-}
-@media only screen and (max-width: 825px){
-    .search input{
-        background: #ddd;
-        width: 200px;
-        border: none;
-        outline: none;
-        padding: 10px 10px;
     }
 }

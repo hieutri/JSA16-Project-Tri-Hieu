@@ -25,10 +25,12 @@ a{
     position: relative;
 }
 .slider:hover #prevBtn{
-    display: inline-flex;
+    transition: 0.2s ease-in-out;
+    opacity: 1;
 }
 .slider:hover #nextBtn{
-    display: inline-flex;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 .slide-container{
     display: flex;
@@ -47,7 +49,8 @@ a{
 #prevBtn, #nextBtn{
     cursor: pointer;
     position: absolute;
-    display: none;
+    opacity: 0;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -107,7 +110,6 @@ a{
     }
 
 }
-
 /*newest product */
 .view-all{
     display: flex;
@@ -162,10 +164,37 @@ a{
 .product-name{
     font-size: 14px;
     height: 40px;
+    margin-bottom: 25px;
 }
 .product-price{
     font-size: 14px;
     color: #8071b3;
+}
+@media only screen and (max-width: 950px) {
+    .product{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .product-info{
+        padding: 5px;
+    }
+    .product-name, .product-price{
+        font-size: 12px;
+    }
+    .product-name{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .product-name{
+        margin-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 335px){
+    .product-name{
+        margin-bottom: 90px;
+    }
 }
 /*product end*/
 /* top seller */
