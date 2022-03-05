@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/all.css">
-    <link rel="stylesheet" href="/css/login-register.css">
+    <link rel="stylesheet" href="/css/signin-up.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="body">
-        <div class="form">
-            <h1 class="tittle">Register</h1>
+    <div class="container">
+        <div class="form" id="sign-in">
+            <h1>Sign In</h1>
             <div class="input-container">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Password">
-                <input type="text" placeholder="Confirm password">
+                <input name="email" type="email" id="email" placeholder="Email" oninvalid="prompt();" required>
+                <input name="password" type="password" id="password" placeholder="Password" oninvalid="prompt();" required>
             </div>
-            <a id="forgot-password" href="#">Forgot Password?</a>
-            <a id="sumbit" href="/homepage/homepage.html">Register</a>
-            <div class="question">already have an account? <a href="./login.html">login</a></div>
+            <button type="sumbit">Sign In</button>
+            <div class="question">Don't have an account? <a href="./signup.html">Sign Up</a></div>
         </div>
     </div>
+    <script src="/java script/signin.js"></script>
 </body>
 </html>
