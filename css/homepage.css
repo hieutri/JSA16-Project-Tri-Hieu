@@ -2,20 +2,10 @@
 a{
     text-decoration: none;
 }
-.tittle-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
 .tittle{
-    width: 580px;
+    margin-bottom: 20px;
+    font-size: 30px;
     text-align: center;
-}
-.line{
-    width: 100%;
-    height: 0;
-    border: 1px solid black;
 }
 /* slider */
 .slider{
@@ -55,7 +45,7 @@ a{
     justify-content: center;
     width: 40px;
     height: 40px;
-    font-size: 35px;
+    font-size: 25px;
     border-radius: 900px;
     border: 2px solid #fff;
     background: none;
@@ -141,7 +131,7 @@ a{
     overflow: hidden;
 }
 .product{
-    width: 20%;
+    width: 22%;
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -162,9 +152,9 @@ a{
     padding: 10px;
 }
 .product-name{
+    overflow: hidden;
     font-size: 14px;
-    height: 40px;
-    margin-bottom: 25px;
+    height:  100px;
 }
 .product-price{
     font-size: 14px;
@@ -175,25 +165,15 @@ a{
         width: 25%;
     }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 800px) {
     .product-info{
         padding: 5px;
     }
+    .product-name{
+        height: 70px;
+    }
     .product-name, .product-price{
         font-size: 12px;
-    }
-    .product-name{
-        margin-bottom: 30px;
-    }
-}
-@media only screen and (max-width: 460px) {
-    .product-name{
-        margin-bottom: 70px;
-    }
-}
-@media only screen and (max-width: 335px){
-    .product-name{
-        margin-bottom: 90px;
     }
 }
 /*product end*/
