@@ -1,0 +1,12 @@
+{
+    "products":[
+        {
+            "name": "akko green",
+            "price": 3000
+        },
+        {
+            "name":"akko red",
+            "price":2700
+        }
+    ]
+}

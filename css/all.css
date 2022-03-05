@@ -10,13 +10,71 @@
     margin: 0 auto;
     background-color: white;
 }
+/*form start*/
+#login-form, #register-form{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    background: rgba(0, 0, 0, 0.4);
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.form-tittle{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    background: #fff;
+}
+.form-input-container input{
+    display: block;
+    outline: none;
+    border: 1px solid #000;
+    width: 300px;
+    padding: 10px 7px;
+    margin: 10px 0px;
+    transition: 0.2s ease-in-out;
+}
+.form-input-container input:focus{
+    color: #8071b3;
+    border-color: #8071b3;
+}
+.form-sumbit{
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background: #8071b3;
+}
+.form-question{
+    font-size: 14px;
+    margin-top: 7px;
+}
+.form-question a{
+    color: #8071b3;
+    cursor: pointer;
+}
+/*form end*/
 .header{
     position: sticky;
     position: -webkit-sticky;
     background: #fff;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header .wrapper h1{
     display: flex;
@@ -43,6 +101,10 @@
     font-size: 25px;
     color: #000;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.header-icon-container a:hover{
+    color: #8071b3;
 }
 .header-contact-info{
     background: #fff;
@@ -65,7 +127,7 @@
     color: #8071b3;
 }
 .header-contact-info .wrapper div p{
-    transition:  0.4s ease-in-out;
+    transition:  0.2s ease-in-out;
     font-size: 15px;
     margin-left: 5px;
 }
@@ -112,6 +174,7 @@
 .header-menu .wrapper a{ 
     margin: 0px 20px;
     color: #000;
+    font-size: 17px;
     font-weight: bold;
     transition: 0.2s ease-in-out;
 }

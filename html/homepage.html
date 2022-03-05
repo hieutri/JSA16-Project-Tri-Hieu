@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Keyboard Shop</title>
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="body">
+<body>
+
+    <div class="form" id="login-form">
+        <div class="form-container">
+            <h1 class="form-tittle">Login</h1>
+            <div class="form-input-container">
+                <input type="email" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <button class="form-sumbit">Login</button>
+            <div class="form-question">Forgot your password? <a href="#">Click here</a></div>
+            <div class="form-question">Don't have an account? <a id="register">Register</a></div>
+        </div>
+    </div>
+    <div class="form" id="register-form">
+        <div class="form-container">
+            <h1 class="form-tittle">Register</h1>
+            <div class="form-input-container">
+                <input type="email" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <button class="form-sumbit">Register</button>
+            <div class="form-question">Already have an account? <a id="login">Login</a></div>
+        </div>
+    </div>
 
     <div class="header">
 
@@ -35,12 +59,12 @@
                 <h1><p style="color:  #8071b3;">KB</p>Shop</h1>
 
                 <div class="search">
-                    <input type="text" placeholder="Search...">
+                    <input id="search-bar"  type="text" placeholder="Search...">
                     <button><i class="fa fa-search"></i></button>
                 </div>
 
                 <div class="header-icon-container">
-                    <a href="/signin-up page/signin.html" id="login"><i class="fa fa-user"></i></a>
+                    <a onclick="openLogin()"><i class="fa fa-user"></i></a>
                     <a id="cart"><i class="fa fa-shopping-cart"></i></a>
                 </div>
                 
@@ -53,8 +77,8 @@
         <div class="header-menu">
             
             <div class="wrapper">
-                <a href="#">HOME</a>
-                <a href="#">SHOP</a>
+                <a href="./homepage.html">HOME</a>
+                <a href="./shop.html">SHOP</a>
                 <a href="#">ABOUT</a>
                 <a href="#">SUPPORT</a>
             </div>
@@ -63,6 +87,7 @@
 
      
     </div>
+
     <div class="header-responsive-navigation">
         <span id="close"><i class="fa fa-close"></i></span>
         <div class="header-responsive-navigation-container">
@@ -71,8 +96,8 @@
                 <button><i class="fa fa-search"></i></button>
             </div>
             <div class="header-responsive-menu">
-                <a href="#">HOME</a>
-                <a href="#">SHOP</a>
+                <a href="./homepage.html">HOME</a>
+                <a href="./shop.html">SHOP</a>
                 <a href="#">ABOUT</a>
                 <a href="#">SUPPORT</a>
             </div>
@@ -85,13 +110,13 @@
 
     <div class="slider">
         <div class="slide-container">
-            <img id="lastClone" src="homepage slide picture/5.jpg" alt="">
-            <img id="pic1" src="homepage slide picture/1.jpg" alt="">
-            <img id="pic2" src="homepage slide picture/2.jpg" alt="">
-            <img id="pic3" src="homepage slide picture/3.jpg" alt="">
-            <img id="pic4" src="homepage slide picture/4.jpg" alt="">
-            <img id="pic5" src="homepage slide picture/5.jpg" alt="">
-            <img id="firstClone" src="homepage slide picture/1.jpg" alt="">
+            <img id="lastClone" src="/picture/homepage slide picture/5.jpg" alt="">
+            <img id="pic1" src="/picture/homepage slide picture/1.jpg" alt="">
+            <img id="pic2" src="/picture/homepage slide picture/2.jpg" alt="">
+            <img id="pic3" src="/picture/homepage slide picture/3.jpg" alt="">
+            <img id="pic4" src="/picture/homepage slide picture/4.jpg" alt="">
+            <img id="pic5" src="/picture/homepage slide picture/5.jpg" alt="">
+            <img id="firstClone" src="/picture/homepage slide picture/1.jpg" alt="">
         </div>
         <span id="prevBtn"><i class="fa fa-arrow-left"></i></span>
         <span id="nextBtn"><i class="fa fa-arrow-right"></i></span>
