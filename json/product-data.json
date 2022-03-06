@@ -1,12 +1,201 @@
-{
-    "products":[
-        {
-            "name": "akko green",
-            "price": 3000
-        },
-        {
-            "name":"akko red",
-            "price":2700
-        }
-    ]
-}
+[
+
+    {
+        "id": "black-gold",
+        "name": "Akko Black Gold 3068",
+        "price": "1,899,000đ",
+        "img": "/images/product-images/black gold/3068.jpg"
+    },
+    {
+        "id": "black-gold",
+        "name":"Akko Black Gold 3098",
+        "price": "2,199,000đ",
+        "img": "/images/product-images/black gold/3068.jpg"
+    },
+    {
+        "id": "black-pink",
+        "name": "Akko Black Pink 3068",
+        "price": "1,899,000đ",
+        "img": "/images/product-images/black pink/3068.jpg"
+    },
+    {
+        "id": "black-pink",
+        "name":"Akko Black Pink 3084",
+        "price": "1,499,000đ",
+        "img": "/images/product-images/black pink/3084.jpg"
+    },
+    {
+        "id": "black-pink",
+        "name":"Akko Black Pink 3098",
+        "price": "2,099,000đ",
+        "img": "/images/product-images/black pink/3084.jpg"
+    },
+    {
+        "id": "dracula-castle",
+        "name":"Akko Dracula Castle 3087",
+        "price": "2,799,000đ",
+        "img": "/images/product-images/dracula castle/3087.jpg"
+    },
+    {
+        "id": "dracula-castle",
+        "name":"Akko Dracula Castle 3098",
+        "price": "2,999,000đ",
+        "img": "/images/product-images/dracula castle/3098.jpg"
+    },
+    {
+        "id": "dragon-ball",
+        "name":"Akko Dragon Ball 3084",
+        "price": "2,499,000đ",
+        "img": "/images/product-images/dragon ball/3084.jpg"
+    },
+    {
+        "id": "dragon-ball",
+        "name":"Akko Dragon Ball Frieza 3108",
+        "price": "2,799,000đ",
+        "img": "/images/product-images/dragon ball/3108frieza.jpg"
+    },
+    {
+        "id": "dragon ball",
+        "name":"Akko Dragon Ball Vegeta 3108",
+        "price": "2,999,000đ",
+        "img": "/images/product-images/dragon ball/3108vegeta.jpg"
+    },
+    {
+        "id": "matcha-red-bean",
+        "name":"Akko Matcha Red Bean 3087",
+        "price": "1,399,000đ",
+        "img": "/images/product-images/matcha red bean/3087.jpg"
+    },
+    {
+        "id": "matcha-red-bean",
+        "name":"Akko Matcha Red Bean 3098",
+        "price": "1,499,000đ",
+        "img": "/images/product-images/matcha red bean/3098.jpg"
+    },
+    {
+        "id": "matcha-red-bean",
+        "name":"Akko Matcha Red Bean 3108",
+        "price": "1,599,000đ",
+        "img": "/images/product-images/matcha red bean/3108.jpg"
+    },
+    {
+        "id": "midnight",
+        "name":"Akko Midnight 3087",
+        "price": "1,199,000đ",
+        "img": "/images/product-images/midnight/3087.jpg"
+    },
+    {
+        "id": "midnight",
+        "name":"Akko Midnight 3098",
+        "price": "1,299,000đ",
+        "img": "/images/product-images/midnight/3098.jpg"
+    },
+    {
+        "id": "midnight",
+        "name":"Akko Midnight 3108",
+        "price": "1,399,000đ",
+        "img": "/images/product-images/midnight/3108.jpg"
+    },
+    {
+        "id": "neon",
+        "name":"Akko Midnight 3061",
+        "price": "2,099,000đ",
+        "img": "/images/product-images/neon/3061.jpg"
+    },
+    {
+        "id": "neon",
+        "name":"Akko Midnight 3098",
+        "price": "2,199,000đ",
+        "img": "/images/product-images/neon/3098.jpg"
+    },
+    {
+        "id": "ocean-star",
+        "name":"Akko Ocean Star 3087",
+        "price": "1,399,000đ",
+        "img": "/images/product-images/ocean star/3087.jpg"
+    },
+    {
+        "id": "ocean-star",
+        "name":"Akko Ocean Star 3098",
+        "price": "1,499,000đ",
+        "img": "/images/product-images/ocean star/3098.jpg"
+    },
+    {
+        "id": "ocean-star",
+        "name":"Akko Ocean Star 3108",
+        "price": "1,599,000đ",
+        "img": "/images/product-images/ocean star/3108.jpg"
+    },
+    {
+        "id": "slient",
+        "name":"Akko Slient 3068",
+        "price": "1,399,000đ",
+        "img": "/images/product-images/slient/3068.jpg"
+    },
+    {
+        "id": "slient",
+        "name":"Akko Slient 3084",
+        "price": "1,499,000đ",
+        "img": "/images/product-images/slient/3084.jpg"
+    },
+    {
+        "id": "slient",
+        "name":"Akko Slient 3087",
+        "price": "1,599,000đ",
+        "img": "/images/product-images/slient/3087.jpg"
+    },
+    {
+        "id": "slient",
+        "name":"Akko Slient 3108",
+        "price": "1,699,000đ",
+        "img": "/images/product-images/slient/3108.jpg"
+    },
+    {
+        "id": "steam-engine",
+        "name":"Akko Steam Engine 3087",
+        "price": "1,499,000đ",
+        "img": "/images/product-images/steam engine/3087.jpg"
+    },
+    {
+        "id": "steam-engine",
+        "name":"Akko Steam Engine 3108",
+        "price": "1,699,000đ",
+        "img": "/images/product-images/steam engine/3108.jpg"
+    },
+    {
+        "id": "world-tour-london",
+        "name":"Akko World Tour London 3098",
+        "price": "1,499,000đ",
+        "img": "/images/product-images/world tour london/3098.jpg"
+    },
+    {
+        "id": "world-tour-london",
+        "name":"Akko World Tour London 3087",
+        "price": "1,399,000đ",
+        "img": "/images/product-images/world tour london/3087.jpg"
+    },
+    {
+        "id": "world-tour-tokyo",
+        "name":"Akko World Tour London 3068",
+        "price": "2,199,000đ",
+        "img": "/images/product-images/world tour tokyo/3068.jpg"
+    },
+    {
+        "id": "world-tour-tokyo",
+        "name":"Akko World Tour London 3084",
+        "price": "2,399,000đ",
+        "img": "/images/product-images/world tour tokyo/3084.jpg"
+    },
+    {
+        "id": "world-tour-tokyo",
+        "name":"Akko World Tour London 3087",
+        "price": "1,399,000đ",
+        "img": "/images/product-images/world tour tokyo/3087.jpg"
+    },
+    {
+        "id": "world-tour-tokyo",
+        "name":"Akko World Tour London 3108",
+        "price": "1,599,000đ",
+        "img": "/images/product-images/world tour tokyo/3108.jpg"
+    }
+]

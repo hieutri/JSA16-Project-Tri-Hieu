@@ -41,10 +41,22 @@ window.onclick = (event) => {
     }
 }
 
-fetch('/json/product-data.json').then(function (respone){
-    return respone.json();
-}).then(function (obj){
-    console.log(obj);
-}).catch(function (error){
-    console.error("sos")
+//product data
+fetch("/json/product-data.json")
+.then(respone => respone.json())
+.then((data) => {
+    const productContainer = document.querySelector(".product-container");
+    for (let i = 0; i < data.length; i++) {
+        productContainer.innerHTML += `
+        <div class="product-content" id = "${data[i].img}">
+        <div class="product-img">
+            <img src="${data[i].img}">
+        </div>
+        <div class="product-info">
+            <div class="product-name">${data[i].name}</div>
+            <div class="product-price">${data[i].price}</div>
+        </div>           
+    </div>
+        `;
+    }
 })
