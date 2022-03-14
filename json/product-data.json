@@ -6,7 +6,7 @@
             "name": "Akko Black Gold 3068",
             "switch": "Akko CS",
             "price": 59,
-            "img": "/images/product-images/akko/black gold/3068.jpg"
+            "img": "../images/product-images/akko/black gold/3068.jpg"
         },
         {
             "class": "akko black-gold",
@@ -14,7 +14,7 @@
             "name":"Akko Black Gold 3098",
             "switch": "Akko CS",
             "price": 59,
-            "img": "/images/product-images/akko/black gold/3068.jpg"
+            "img": "../images/product-images/akko/black gold/3068.jpg"
         },
         {
             "class": "akko black-pink",
@@ -22,7 +22,7 @@
             "name": "Akko Black Pink 3068",
             "switch": "Akko CS",
             "price": 59,
-            "img": "/images/product-images/akko/black pink/3068.jpg"
+            "img": "../images/product-images/akko/black pink/3068.jpg"
         },
         {
             "class": "akko black-pink",
@@ -30,126 +30,126 @@
             "name":"Akko Black Pink 3084",
             "switch": "Akko CS",
             "price": 59,
-            "img": "/images/product-images/akko/black pink/3084.jpg"
+            "img": "../images/product-images/akko/black pink/3084.jpg"
         },
         {
             "class": "akko black-pink",
             "name":"Akko Black Pink 3098",
             "switch": "Akko CS",
             "price": 59,
-            "img": "/images/product-images/akko/black pink/3084.jpg"
+            "img": "../images/product-images/akko/black pink/3084.jpg"
         },
         {
             "class": "akko dracula-castle",
             "name":"Akko Dracula Castle 3087",
             "switch": "TTC",
             "price": 59,
-            "img": "/images/product-images/akko/dracula castle/3087.jpg"
+            "img": "../images/product-images/akko/dracula castle/3087.jpg"
         },
         {
             "class": "akko dracula-castle",
             "name":"Akko Dracula Castle 3098",
             "switch": "TTC switch",
             "price": 59,
-            "img": "/images/product-images/akko/dracula castle/3098.jpg"
+            "img": "../images/product-images/akko/dracula castle/3098.jpg"
         },
         {
             "class": "akko dragon-ball",
             "name":"Akko Dragon Ball 3084",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/dragon ball/3084.jpg"
+            "img": "../images/product-images/akko/dragon ball/3084.jpg"
         },
         {
             "class": "akko dragon-ball",
             "name":"Akko Dragon Ball Frieza 3108",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/dragon ball/3108frieza.jpg"
+            "img": "../images/product-images/akko/dragon ball/3108frieza.jpg"
         },
         {
             "class": "akko dragon ball",
             "name":"Akko Dragon Ball Vegeta 3108",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/dragon ball/3108vegeta.jpg"
+            "img": "../images/product-images/akko/dragon ball/3108vegeta.jpg"
         },
         {
             "class": "matcha-red-bean",
             "name":"Akko Matcha Red Bean 3087",
             "switch": "Gateron switch",
             "price": 59,
-            "img": "/images/product-images/akko/matcha red bean/3087.jpg"
+            "img": "../images/product-images/akko/matcha red bean/3087.jpg"
         },
         {
             "class": "akko matcha-red-bean",
             "name":"Akko Matcha Red Bean 3098",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/matcha red bean/3098.jpg"
+            "img": "../images/product-images/akko/matcha red bean/3098.jpg"
         },
         {
             "class": "akko matcha-red-bean",
             "name":"Akko Matcha Red Bean 3108",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/matcha red bean/3108.jpg"
+            "img": "../images/product-images/akko/matcha red bean/3108.jpg"
         },
         {
             "class": "akko midnight",
             "name":"Akko Midnight 3087",
             "switch": "Akko",
             "price": 59,
-            "img": "/images/product-images/akko/midnight/3087.jpg"
+            "img": "../images/product-images/akko/midnight/3087.jpg"
         },
         {
             "class": "akko midnight",
             "name":"Akko Midnight 3098",
             "switch": "Akko",
             "price": 59,
-            "img": "/images/product-images/akko/midnight/3098.jpg"
+            "img": "../images/product-images/akko/midnight/3098.jpg"
         },
         {
             "class": "akko midnight",
             "name":"Akko Midnight 3108",
             "switch": "Akko",
             "price": 59,
-            "img": "/images/product-images/akko/midnight/3108.jpg"
+            "img": "../images/product-images/akko/midnight/3108.jpg"
         },
         {
             "class": "akko neon",
             "name":"Akko Midnight 3061",
             "switch": "Akko CS Jelly",
             "price": 59,
-            "img": "/images/product-images/akko/neon/3061.jpg"
+            "img": "../images/product-images/akko/neon/3061.jpg"
         },
         {
             "class": "akko neon",
             "name":"Akko Midnight 3098",
             "switch": "Akko CS Jelly",
             "price": 59,
-            "img": "/images/product-images/akko/neon/3098.jpg"
+            "img": "../images/product-images/akko/neon/3098.jpg"
         },
         {
             "class": "akko ocean-star",
             "name":"Akko Ocean Star 3087",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/ocean star/3087.jpg"
+            "img": "../images/product-images/akko/ocean star/3087.jpg"
         },
         {
             "class": "akko ocean-star",
             "name":"Akko Ocean Star 3098",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/ocean star/3098.jpg"
+            "img": "../images/product-images/akko/ocean star/3098.jpg"
         },
         {
             "class": "akko ocean-star",
             "name":"Akko Ocean Star 3108",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/ocean star/3108.jpg"
+            "img": "../images/product-images/akko/ocean star/3108.jpg"
         },
         {
             "class": "akko slient",
@@ -157,7 +157,7 @@
             "name":"Akko Slient 3068",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/slient/3068.jpg"
+            "img": "../images/product-images/akko/slient/3068.jpg"
         },
         {
             "class": "akko slient",
@@ -165,7 +165,7 @@
             "name":"Akko Slient 3084",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/slient/3084.jpg"
+            "img": "../images/product-images/akko/slient/3084.jpg"
         },
         {
             "class": "akko slient",
@@ -173,49 +173,49 @@
             "name":"Akko Slient 3087",
             "switch": "Akko",
             "price": 59,
-            "img": "/images/product-images/akko/slient/3087.jpg"
+            "img": "../images/product-images/akko/slient/3087.jpg"
         },
         {
             "class": "akko slient",
             "name":"Akko Slient 3108",
             "switch": "Akko",
             "price": 59,
-            "img": "/images/product-images/akko/slient/3108.jpg"
+            "img": "../images/product-images/akko/slient/3108.jpg"
         },
         {
             "class": "akko steam-engine",
             "name":"Akko Steam Engine 3087",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/steam engine/3087.jpg"
+            "img": "../images/product-images/akko/steam engine/3087.jpg"
         },
         {
             "class": "akko steam-engine",
             "name":"Akko Steam Engine 3108",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/steam engine/3108.jpg"
+            "img": "../images/product-images/akko/steam engine/3108.jpg"
         },
         {
             "class": "akko world-tour-london",
             "name":"Akko World Tour London 3098",
             "switch": "Cherry MX",
             "price": 59,
-            "img": "/images/product-images/akko/world tour london/3098.jpg"
+            "img": "../images/product-images/akko/world tour london/3098.jpg"
         },
         {
             "class": "akko world-tour-london",
             "name":"Akko World Tour London 3087",
             "switch": "Cherry MX",
             "price": 59,
-            "img": "/images/product-images/akko/world tour london/3087.jpg"
+            "img": "../images/product-images/akko/world tour london/3087.jpg"
         },
         {
             "class": "akko world-tour-tokyo",
             "name":"Akko World Tour London 3068",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/world tour tokyo/3068.jpg"
+            "img": "../images/product-images/akko/world tour tokyo/3068.jpg"
         },
         {
             "class": "akko world-tour-tokyo",
@@ -223,7 +223,7 @@
             "name":"Akko World Tour London 3084",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/world tour tokyo/3084.jpg"
+            "img": "../images/product-images/akko/world tour tokyo/3084.jpg"
         },
         {
             "class": "akko world-tour-tokyo",
@@ -231,63 +231,63 @@
             "name":"Akko World Tour London 3087",
             "switch": "Akko v2",
             "price": 59,
-            "img": "/images/product-images/akko/world tour tokyo/3087.jpg"
+            "img": "../images/product-images/akko/world tour tokyo/3087.jpg"
         },
         {
             "class": "akko world-tour-tokyo",
             "name":"Akko World Tour London 3108",
             "switch": "Akko",
             "price": 59,
-            "img": "/images/product-images/akko/world tour tokyo/3108.jpg"
+            "img": "../images/product-images/akko/world tour tokyo/3108.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G213",
             "switch": "G Mech-Dome",
             "price": 49,
-            "img": "/images/product-images/logitech/g213.jpg"
+            "img": "../images/product-images/logitech/g213.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G413",
             "switch": "Romer-G",
             "price": 79,
-            "img": "/images/product-images/logitech/g413.jpg"
+            "img": "../images/product-images/logitech/g413.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G512",
             "switch": "Logitech GX",
             "price": 99,
-            "img": "/images/product-images/logitech/g512.jpg"
+            "img": "../images/product-images/logitech/g512.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G610",
             "switch": "Cherry MX",
             "price": 89,
-            "img": "/images/product-images/logitech/g610.jpg"
+            "img": "../images/product-images/logitech/g610.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G813",
             "switch": "Logitech GL",
             "price": 139,
-            "img": "/images/product-images/logitech/G813.jpg"
+            "img": "../images/product-images/logitech/G813.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G913",
             "switch": "Logitech GL",
             "price": 199,
-            "img": "/images/product-images/logitech/g913.jpg"
+            "img": "../images/product-images/logitech/g913.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G Pro K/DA",
             "switch": "Logitech GX",
             "price": 159,
-            "img": "/images/product-images/logitech/g pro kda.jpg"
+            "img": "../images/product-images/logitech/g pro kda.jpg"
         },
         {
             "class": "logitech",
@@ -295,35 +295,35 @@
             "name":"Logitech G Pro X",
             "switch": "Logitech GX",
             "price": 119,
-            "img": "/images/product-images/logitech/g pro x.jpg"
+            "img": "../images/product-images/logitech/g pro x.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron C1",
             "switch": "Keychron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron c1.jpg"
+            "img":"../images/product-images/keychron/keychron c1.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron C2",
             "switch": "Keychron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron c2.jpg"
+            "img":"../images/product-images/keychron/keychron c2.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K1v4",
             "switch": "Gateron low profile",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k1v4.jpg"
+            "img":"../images/product-images/keychron/keychron k1v4.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K2",
             "switch": "Gateron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k2.jpg"
+            "img":"../images/product-images/keychron/keychron k2.jpg"
         },
         {
             "class": "keychron",
@@ -331,56 +331,56 @@
             "name": "Keychron K3v2",
             "switch": "Keychron low profile",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k3v2.jpg"
+            "img":"../images/product-images/keychron/keychron k3v2.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K4v2",
             "switch": "Gateron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k4v2.jpg"
+            "img":"../images/product-images/keychron/keychron k4v2.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K6",
             "switch": "Gateron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k6.jpg"
+            "img":"../images/product-images/keychron/keychron k6.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K8",
             "switch": "Keychron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k8.jpg"
+            "img":"../images/product-images/keychron/keychron k8.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K10",
             "switch": "Gateron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k10.jpg"
+            "img":"../images/product-images/keychron/keychron k10.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K12",
             "switch": "Keychron",
             "price": 59,
-            "img":"/images/product-images/keychron/keychron k12.jpg"
+            "img":"../images/product-images/keychron/keychron k12.jpg"
         },
         {
             "class": "razer blackwidow",
             "name": "Razer BlackWidow V3 Mini HyperSpeed - Phantom Pudding Edition",
             "switch": "Razer Mechanical",
             "price": 219.99,
-            "img":"/images/product-images/razer/blackwidow/1.jpg"
+            "img":"../images/product-images/razer/blackwidow/1.jpg"
         },
         {
             "class": "razer blackwidow",
             "name": "Razer Blackwidow V3 Mini HyperSpeed",
             "switch": "Razer Mechanical",
             "price": 199.99,
-            "img":"/images/product-images/razer/blackwidow/2.jpg"
+            "img":"../images/product-images/razer/blackwidow/2.jpg"
         },
         {
             "class": "razer blackwidow",
@@ -389,7 +389,7 @@
             "price": 219.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/blackwidow/3.jpg"
+            "img":"../images/product-images/razer/blackwidow/3.jpg"
         },
         {
             "class": "razer blackwidow",
@@ -398,7 +398,7 @@
             "price": 159.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/blackwidow/4.jpg"
+            "img":"../images/product-images/razer/blackwidow/4.jpg"
         },
         {
             "class": "razer blackwidow",
@@ -407,7 +407,7 @@
             "price": 129.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/blackwidow/5.jpg"
+            "img":"../images/product-images/razer/blackwidow/5.jpg"
         },
         {
             "class": "razer blackwidow",
@@ -416,7 +416,7 @@
             "price": 99.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/blackwidow/6.jpg"
+            "img":"../images/product-images/razer/blackwidow/6.jpg"
         },
         {
             "class": "razer blackwidow",
@@ -425,7 +425,7 @@
             "price": 129.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/blackwidow/7.jpg"
+            "img":"../images/product-images/razer/blackwidow/7.jpg"
         },
         {
             "class": "razer huntsman",
@@ -434,7 +434,7 @@
             "price": 129.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/huntsman/1.jpg"
+            "img":"../images/product-images/razer/huntsman/1.jpg"
         },
         {
             "class": "razer huntsman",
@@ -443,7 +443,7 @@
             "price": 139.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/huntsman/2.jpg"
+            "img":"../images/product-images/razer/huntsman/2.jpg"
         },
         {
             "class": "razer huntsman",
@@ -452,7 +452,7 @@
             "price": 139.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/razer/huntsman/3.jpg"
+            "img":"../images/product-images/razer/huntsman/3.jpg"
         },
         {
             "class": "razer huntsman",
@@ -461,7 +461,7 @@
             "price": 179.99,
             "discount":true, 
             "discountPercent": 25,
-            "img":"/images/product-images/razer/huntsman/4.jpg"
+            "img":"../images/product-images/razer/huntsman/4.jpg"
         },
         {
             "class": "razer huntsman",
@@ -470,21 +470,21 @@
             "price": 179.99,
             "discount":true, 
             "discountPercent": 25,
-            "img":"/images/product-images/razer/huntsman/5.jpg"
+            "img":"../images/product-images/razer/huntsman/5.jpg"
         },
         {
             "class": "razer huntsman",
             "name": "Razer Huntsman V2 Analog",
             "switch": "Razer Optical Analog",
             "price": 329.99,
-            "img":"/images/product-images/razer/huntsman/6.jpg"
+            "img":"../images/product-images/razer/huntsman/6.jpg"
         },
         {
             "class": "corsair k63",
             "name": "Corsair K65 RGB Mini",
             "switch": "Cherry MX",
             "price": 119.99,
-            "img":"/images/product-images/corsair/k63/Corsair K65 RGB MINI.jpg"
+            "img":"../images/product-images/corsair/k63/Corsair K65 RGB MINI.jpg"
         },
         {
             "class": "corsair k63",
@@ -493,7 +493,7 @@
             "price": 79.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/corsair/k63/k63.jpg"
+            "img":"../images/product-images/corsair/k63/k63.jpg"
         },
         {
             "class": "corsair k63",
@@ -502,7 +502,7 @@
             "price": 99.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/corsair/k63/k63_wireless.jpg"
+            "img":"../images/product-images/corsair/k63/k63_wireless.jpg"
         },
         {
             "class": "corsair k68",
@@ -511,7 +511,7 @@
             "price": 99.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/corsair/k68/k68.jpg"
+            "img":"../images/product-images/corsair/k68/k68.jpg"
         },
         {
             "class": "corsair k68",
@@ -520,7 +520,7 @@
             "price": 119.99,
             "discount":true, 
             "discountPercent": 25,
-            "img":"/images/product-images/corsair/k68/K68 RGB.jpg"
+            "img":"../images/product-images/corsair/k68/K68 RGB.jpg"
         },
         {
             "class": "corsair k70",
@@ -529,7 +529,7 @@
             "price": 139.99,
             "discount":true, 
             "discountPercent": 5,
-            "img":"/images/product-images/corsair/k70/K70 TKL RGB Champion Series.jpg"
+            "img":"../images/product-images/corsair/k70/K70 TKL RGB Champion Series.jpg"
         },
         {
             "class": "corsair k70",
@@ -538,7 +538,7 @@
             "price": 149.99,
             "discount":true, 
             "discountPercent": 15,
-            "img":"/images/product-images/corsair/k70/Corsair K70 RGB MK.2 Silent.jpg"
+            "img":"../images/product-images/corsair/k70/Corsair K70 RGB MK.2 Silent.jpg"
         },
         {
             "class": "corsair k70",
@@ -547,7 +547,7 @@
             "price": 159.99,
             "discount":true, 
             "discountPercent": 10,
-            "img":"/images/product-images/corsair/k70/K70 RGB MK.2 Low Profile.jpg"
+            "img":"../images/product-images/corsair/k70/K70 RGB MK.2 Low Profile.jpg"
         },
         {
             "class": "corsair k70",
@@ -556,7 +556,7 @@
             "price": 159.99,
             "discount":true, 
             "discountPercent": 20,
-            "img":"/images/product-images/corsair/k70/Corsair K70 RGB MK.2 SE.jpg"
+            "img":"../images/product-images/corsair/k70/Corsair K70 RGB MK.2 SE.jpg"
         },
         {
             "class": "corsair k70",
@@ -565,7 +565,7 @@
             "price": 159.99,
             "discount":true, 
             "discountPercent": 10,
-            "img":"/images/product-images/corsair/k70/Corsair K70 RGB MK.2 Silent.jpg"
+            "img":"../images/product-images/corsair/k70/Corsair K70 RGB MK.2 Silent.jpg"
         },
         {
             "class": "corsair k95",
@@ -574,7 +574,7 @@
             "price": 189.99,
             "discount":true, 
             "discountPercent": 10,
-            "img":"/images/product-images/corsair/k95/Corsair K95 RGB Platinum XT.jpg"
+            "img":"../images/product-images/corsair/k95/Corsair K95 RGB Platinum XT.jpg"
         },
         {
             "class": "corsair k100",
@@ -583,14 +583,14 @@
             "price": 229.99,
             "discount":true, 
             "discountPercent": 5,
-            "img":"/images/product-images/corsair/k100/Corsair K100 RGB.jpg"
+            "img":"../images/product-images/corsair/k100/Corsair K100 RGB.jpg"
         },
         {
             "class": "corsair k100",
             "name": "Corsair K100 RGB Midnight Gold",
             "switch": "Corsair OPX RF Optical-Mechanical",
             "price": 249.99,
-            "img":"/images/product-images/corsair/k100/Corsair K100 RGB Midnight Gold.jpg"
+            "img":"../images/product-images/corsair/k100/Corsair K100 RGB Midnight Gold.jpg"
         }
     ]
 }
