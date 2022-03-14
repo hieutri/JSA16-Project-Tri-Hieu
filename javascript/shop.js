@@ -82,19 +82,29 @@ fetch("/json/product-data.json")
       }
       filterSelection("all");
       //cart start
-      const cartProductContainer = document.getElementsByClassName("cart-product-info");
+      const cartProductContainer = document.querySelector(".cart-product-container");
+
+      console.log(cartProductContainer);
       let addProductBtn = document.querySelectorAll(".add-to-cart");
       for (let i = 0; i < data.products.length; i++) {
          addProductBtn[i].addEventListener("click", () => {
-            console.log(data.products[i].name);
             cartProductContainer.innerHTML += `
-       <div class="cart-product">
-       <div class="cart-product-img"><img src="${data.products[i].img}"></div>
-       <div class="cart-product-name">${data.products[i].name} + (${data.products[i].switch} Switch)</div>
-       <div class="cart-product-price">${data.products[i].price}</div>
-   </div>
+            <div class="cart-product">
+            <div class="cart-product-img"><img src="${data.products[i].img}"></div>
+            <div class="cart-product-name">${data.products[i].name} (${data.products[i].switch} Switch)</div>
+            <div class="cart-product-price">${data.products[i].price}</div>
+            <button class = "cart-remove-btn">Remove</button>
+            </div>
             `;
-         });
+            let removeProductBtn = document.getElementsByClassName("cart-remove-btn")
+            for (let i = 0; i < removeProductBtn.length; i++) {
+               let btn = removeProductBtn[i]
+               btn.addEventListener("click", (event)=>{
+                  let btnClicked = event.target;
+                  btnClicked.parentElement.remove()
+               });
+            }
+         })
       }
       //cart end
    });
