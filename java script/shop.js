@@ -1,52 +1,49 @@
 document.getElementById("brand").addEventListener("click", () => {
    const brandDropdown = document.querySelector(".brand-content");
    if (brandDropdown.style.display === "block") {
-      brandDropdown.style.display = "none"
-      document.querySelector("#brand i").classList = "fa fa-angle-right"
+      brandDropdown.style.display = "none";
+      document.querySelector("#brand i").classList = "fa fa-angle-right";
+   } else {
+      brandDropdown.style.display = "block";
+      document.querySelector("#brand i").classList = "fa fa-angle-down";
    }
-   else {
-      brandDropdown.style.display = "block"
-      document.querySelector("#brand i").classList = "fa fa-angle-down"
-   }
-})
+});
 document.getElementById("akko-selection").addEventListener("click", () => {
    const brandDropdown = document.querySelector(".akko-content");
    if (brandDropdown.style.display === "block") {
-      brandDropdown.style.display = "none"
-      document.querySelector("#akko-selection i").classList = "fa fa-angle-right"
+      brandDropdown.style.display = "none";
+      document.querySelector("#akko-selection i").classList = "fa fa-angle-right";
+   } else {
+      brandDropdown.style.display = "block";
+      document.querySelector("#akko-selection i").classList = "fa fa-angle-down";
    }
-   else {
-      brandDropdown.style.display = "block"
-      document.querySelector("#akko-selection i").classList = "fa fa-angle-down"
-   }
-})
+});
 document.getElementById("razer-selection").addEventListener("click", () => {
    const brandDropdown = document.querySelector(".razer-content");
    if (brandDropdown.style.display === "block") {
-      brandDropdown.style.display = "none"
-      document.querySelector("#razer-selection i").classList = "fa fa-angle-right"
+      brandDropdown.style.display = "none";
+      document.querySelector("#razer-selection i").classList =
+         "fa fa-angle-right";
+   } else {
+      brandDropdown.style.display = "block";
+      document.querySelector("#razer-selection i").classList = "fa fa-angle-down";
    }
-   else {
-      brandDropdown.style.display = "block"
-      document.querySelector("#razer-selection i").classList = "fa fa-angle-down"
-   }
-})
+});
 document.getElementById("corsair-selection").addEventListener("click", () => {
    const brandDropdown = document.querySelector(".corsair-content");
    if (brandDropdown.style.display === "block") {
-      brandDropdown.style.display = "none"
-      document.querySelector("#corsair-selection i").classList = "fa fa-angle-right"
+      brandDropdown.style.display = "none";
+      document.querySelector("#corsair-selection i").classList =
+         "fa fa-angle-right";
+   } else {
+      brandDropdown.style.display = "block";
+      document.querySelector("#corsair-selection i").classList =
+         "fa fa-angle-down";
    }
-   else {
-      brandDropdown.style.display = "block"
-      document.querySelector("#corsair-selection i").classList = "fa fa-angle-down"
-   }
-})
-
-
+});
 
 fetch("/json/product-data.json")
-   .then(respone => respone.json())
+   .then((respone) => respone.json())
    .then((data) => {
       const productContainer = document.querySelector(".product-container");
 
@@ -66,8 +63,7 @@ fetch("/json/product-data.json")
             </div>           
          </div>
          `;
-         }
-         else {
+         } else {
             productContainer.innerHTML += `
          <div class="product-content ${data.products[i].class}">
          <div class="product-img">
@@ -84,20 +80,36 @@ fetch("/json/product-data.json")
          `;
          }
       }
-      filterSelection("all")
-   })
+      filterSelection("all");
+      //cart start
+      const cartProductContainer = document.getElementsByClassName("cart-product-info");
+      let addProductBtn = document.querySelectorAll(".add-to-cart");
+      for (let i = 0; i < data.products.length; i++) {
+         addProductBtn[i].addEventListener("click", () => {
+            console.log(data.products[i].name);
+            cartProductContainer.innerHTML += `
+       <div class="cart-product">
+       <div class="cart-product-img"><img src="${data.products[i].img}"></div>
+       <div class="cart-product-name">${data.products[i].name} + (${data.products[i].switch} Switch)</div>
+       <div class="cart-product-price">${data.products[i].price}</div>
+   </div>
+            `;
+         });
+      }
+      //cart end
+   });
 const searchInput = document.getElementById("search-bar");
 document.getElementById("search-sumbit").addEventListener("click", () => {
-   search()
-})
+   search();
+});
 
 searchInput.addEventListener("keypress", (enter) => {
-   if (enter.key === 'Enter') search();
-})
+   if (enter.key === "Enter") search();
+});
 
 function search() {
    var filter = searchInput.value.toLowerCase();
-   filterSelection(filter)
+   filterSelection(filter);
 }
 function filterSelection(c) {
    var x, i;
@@ -114,7 +126,9 @@ function AddClass(element, name) {
    arr1 = element.className.split(" ");
    arr2 = name.split(" ");
    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      if (arr1.indexOf(arr2[i]) == -1) {
+         element.className += " " + arr2[i];
+      }
    }
 }
 
@@ -131,17 +145,12 @@ function RemoveClass(element, name) {
 }
 
 //cart start
-const cartContainer = document.querySelector(".cart-container")
-document.getElementById("cart").addEventListener('click', () => {
-   if (cartContainer.style.display == 'inline-block') {
-      cartContainer.style.display = 'none'
+const cartContainer = document.querySelector(".cart-container");
+document.getElementById("cart").addEventListener("click", () => {
+   if (cartContainer.style.display == "inline-block") {
+      cartContainer.style.display = "none";
+   } else {
+      cartContainer.style.display = "inline-block";
    }
-   else {
-      cartContainer.style.display = 'inline-block'
-   }
-})
-
-const cart = document.querySelector(".cart-product-info")
-
-
-    //cart end
+});
+//cart end

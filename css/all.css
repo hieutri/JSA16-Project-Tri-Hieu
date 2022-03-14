@@ -95,10 +95,10 @@
 .header-icon-container{
     display: flex;
     justify-content: space-between;
-    width: 50px;
+    width: 40px;
 }
 .header-icon-container a{
-    font-size: 25px;
+    font-size: 20px;
     color: #000;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -214,7 +214,6 @@
 }
 .cart-product-info{
     padding: 20px;
-    color: #ddd;
 }
 /*cart end*/
 /*responsive header*/
