@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keyboard Shop</title>
-    <link rel="stylesheet" href="/css/all.css">
-    <link rel="stylesheet" href="/css/shop.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="/css/shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-
     <!-- header start -->
-
     <div class="form" id="login-form">
         <div class="form-container">
             <h1 class="form-tittle">Login</h1>
             <div class="form-input-container">
-                <input type="email" placeholder="Enter your email">
-                <input type="password" placeholder="Enter your password">
+                <input type="email" placeholder="Enter your email" />
+                <input type="password" placeholder="Enter your password" />
             </div>
             <button class="form-sumbit">Login</button>
-            <div class="form-question">Forgot your password? <a href="#">Click here</a></div>
-            <div class="form-question">Don't have an account? <a id="register">Register</a></div>
+            <div class="form-question">
+                Forgot your password? <a href="#">Click here</a>
+            </div>
+            <div class="form-question">
+                Don't have an account? <a id="register">Register</a>
+            </div>
         </div>
     </div>
     <div class="form" id="register-form">
         <div class="form-container">
             <h1 class="form-tittle">Register</h1>
             <div class="form-input-container">
-                <input type="email" placeholder="Enter your email">
-                <input type="password" placeholder="Enter your password">
+                <input type="email" placeholder="Enter your email" />
+                <input type="password" placeholder="Enter your password" />
             </div>
             <button class="form-sumbit">Register</button>
-            <div class="form-question">Already have an account? <a id="login">Login</a></div>
+            <div class="form-question">
+                Already have an account? <a id="login">Login</a>
+            </div>
         </div>
     </div>
 
     <div class="header">
-
         <div class="header-contact-info">
             <div class="wrapper">
                 <div class="phone-number">
@@ -50,51 +55,55 @@
                 </div>
                 <div class="email">
                     <i class="fa fa-envelope"></i>
-                    <p>trihivu@gmail.com</p>
+                    <p>kbshop@gmail.com</p>
                 </div>
             </div>
         </div>
 
         <div class="header-search">
             <div class="wrapper">
-
-                <h1><p style="color:  #8071b3;">KB</p>Shop</h1>
+                <h1>
+                    <p style="color: #8071b3">KB</p>
+                    Shop
+                </h1>
 
                 <div class="search">
-                    <input id="search-bar"  type="text" placeholder="Search...">
-                    <button><i class="fa fa-search"></i></button>
+                    <input id="search-bar" type="text" placeholder="Search..."/>
+                    <button id="search-sumbit"><i class="fa fa-search"></i></button>
                 </div>
 
                 <div class="header-icon-container">
                     <a onclick="openLogin()"><i class="fa fa-user"></i></a>
                     <a id="cart"><i class="fa fa-shopping-cart"></i></a>
                 </div>
-                
+
                 <div class="responsive-navigation-button">
                     <i class="fa fa-bars"></i>
                 </div>
-
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-content">
+                <p>cart</p>
+                <hr />
+                <div class="cart-product-info">Your cart is empty.</div>
             </div>
         </div>
         <div class="header-menu">
-            
             <div class="wrapper">
                 <a href="./homepage.html">HOME</a>
                 <a href="./shop.html">SHOP</a>
                 <a href="#">ABOUT</a>
                 <a href="#">SUPPORT</a>
             </div>
-            
         </div>
-
-     
     </div>
 
     <div class="header-responsive-navigation">
         <span id="close"><i class="fa fa-close"></i></span>
         <div class="header-responsive-navigation-container">
             <div class="header-responsive-search">
-                <input type="text" placeholder="Search...">
+                <input type="text" placeholder="Search..." />
                 <button><i class="fa fa-search"></i></button>
             </div>
             <div class="header-responsive-menu">
@@ -109,65 +118,77 @@
             </div>
         </div>
     </div>
-
     <!-- header end -->
 
     <!--body start-->
     <div class="body">
         <div class="body-wrapper">
-
             <div class="category">
-
                 <div class="category-tittle">
                     <h2>Category</h2>
                 </div>
 
-                <div class="category-choice">
-                    <p id="view-all">View All Product</p>
+                <div class="category-choice-container">
+                    <p onclick="filterSelection('all')"  id="view-all-product">View All Product</p>
                 </div>
 
-                <div class="category-choice">
-                    <p id="product-line">Product Line</p>
-                    <ul class="category-dropdown-container">
-                        <li id="black-gold">Black Gold</li>
-                        <li id="black-pink">Black Pink</li>
-                        <li id="dracula-castle">Dracula Castle</li>
-                        <li id="dragon-ball">Dragon Ball</li>
-                        <li id="matcha-red-bean">Matcha Red Bean</li>
-                        <li id="midnight">Midnight</li>
-                        <li id="neon">Neon</li>
-                        <li id="ocean-star">Ocean Star</li>
-                        <li id="slient">Slient</li>
-                        <li id="steam-engine">Steam Engine</li>
-                        <li id="world-tour-lodon">World Tour London</li>
-                        <li id="world-tour-tokyo">World Tour Tokyo</li>
-                    </ul>
-                </div>
+                <div class="category-choice-container">
+                    <p onclick="dropDownTrigger('brand','brand-content','brand-arrow')" id="brand">Brand <i class="fa fa-angle-right brand-arrow"></i></p>
 
-                <div class="category-choice">
-                    <p id="newest-product">Newest Product</p>
-                </div> 
+                    <div class="brand-content dropdown">
+                        <p onclick="filterSelection('keychron')"  id="keychron-selection">Keychron</p>
 
-                <div class="category-choice">
-                    <p id="top-seller">Top Seller</p>
+                        <p onclick="filterSelection('akko')"  id="akko-selection">Akko <i class="fa fa-angle-right dropdown-trigger"></i></p>
+                        <div class="akko-content dropdown">
+                            <p onclick="filterSelection('black-gold')"  id="black-gold-selection">Black Gold</p>
+                            <p onclick="filterSelection('black-pink')"  id="black-pink-selection">Black Pink</p>
+                            <p onclick="filterSelection('dracula-castle')"  id="dracula-castle-selection">Dracula Castle</p>
+                            <p onclick="filterSelection('dragon-ball')"  id="dragon-ball-selection">Dragon Ball</p>
+                            <p onclick="filterSelection('matcha-red-bean')"  id="matcha-red-bean-selection">Matcha Red Bean</p>
+                            <p onclick="filterSelection('midnight')"  id="midnight-selection">Midnight</p>
+                            <p onclick="filterSelection('neon')"  id="neon-selection">Neon</p>
+                            <p onclick="filterSelection('ocean-star')"  id="ocean-star-selection">Ocean Star</p>
+                            <p onclick="filterSelection('slient')"  id="slient-selection">Slient</p>
+                            <p onclick="filterSelection('steam-engine')"  id="steam-engine-selection">Steam Engine</p>
+                            <p onclick="filterSelection('world-tour-london')"  id="world-tour-london-selection">World Tour London</p>
+                            <p onclick="filterSelection('world-tour-tokyo')"  id="world-tour-tokyo-selection">World Tour Tokyo</p>
+                        </div>
+
+                        <p onclick="filterSelection('logitech')"  id="logitech-selection">Logitech</p>
+
+                        <p onclick="filterSelection('razer')"  id="razer-selection">Razer <i class="fa fa-angle-right" dropdown-trigger></i></p>
+                        <div class="razer-content dropdown">
+                            <p onclick="filterSelection('blackwidow')"  id="razer-blackwidow-selection">Blackwidow</p>
+                            <p onclick="filterSelection('huntsman')"  id="razer-huntsman-selection">Huntsman</p>
+                        </div>
+
+                        <p onclick="filterSelection('corsair')"  id="corsair-selection">Corsair <i class="fa fa-angle-right dropdown-trigger"></i></p>
+                        <div class="corsair-content dropdown">
+                            <p onclick="filterSelection('k63')" id="corsair-k63-selection">Corsair K63</p>
+                            <p onclick="filterSelection('k68')"  id="corsair-k68-selection">Corsair K68</p>
+                            <p onclick="filterSelection('k70')" id="corsair-k70-selection">Corsair K70</p>
+                            <p onclick="filterSelection('k95')" id="corsair-k95-selection">Corsair K95</p>
+                            <p onclick="filterSelection('k100')" id="corsair-k100-selection">Corsair K100</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
             <div class="shop">
-
-                <div class="product-container">
+                <div class="sort-container">
+                    <label for="sort-content"></label>
+                    <select name="sort-content" id="sort-content">
+                        <option value="a-z">A to Z</option>
+                        <option value="z-a">Z to A</option>
+                        <option value="high-low">Price: High To Low</option>
+                        <option value="low-high">Price: Low To High</option>
+                    </select>
                 </div>
-                
+                <div class="product-container"></div>
             </div>
-
         </div>
     </div>
-
-
-
-
-
     <!--body end-->
 
     <!--footer start-->
@@ -181,8 +202,8 @@
     </div>
     <!--footer end-->
 
-
     <script src="/java script/shop.js"></script>
     <script src="/java script/general.js"></script>
 </body>
+
 </html>

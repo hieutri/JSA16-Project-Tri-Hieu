@@ -1,18 +1,40 @@
-
-a{
-    text-decoration: none;
+.view-all{
+    padding: 5px 20px;
+    font-size: 20px;
+    border: none;
+    background: #8071b3be;
+    border: none;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.view-all:hover{
+    background: #8071b3;
+}
+.purple-line{
+    border: 2px solid #8071b3;
+    width: 100%;
+    height: 0;
+}
+.tittle-container{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
 }
 .tittle{
-    margin-bottom: 20px;
-    font-size: 30px;
+    color: #8071b3;
+    font-size: 3rem;
+    font-weight: bold;
     text-align: center;
+    width: 800px;
 }
 /* slider */
 .slider{
     display: flex;
     align-items: center;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 .slider:hover #prevBtn{
     transition: 0.2s ease-in-out;
@@ -25,12 +47,20 @@ a{
 .slide-container{
     display: flex;
     transition: 0.2s ease-in-out;
+    height: 83vh;
 }
-.slide-container img{
-    max-width: 100%;
+.slide{
+    width: 100vw;
+    height: 100%;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .slider-button-container{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,104 +73,102 @@ a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    font-size: 35px;
     border-radius: 900px;
-    border: 2px solid #fff;
+    border: 2px solid #ddd;
     background: none;
-    color: #fff;
+    color: #ddd;
     margin: 0px 20px;
     transition: 0.2s ease-in-out;
 }
-#nextBtn:hover{
+#nextBtn:hover, #prevBtn:hover{
     background: #8071b3;
-    border: 2px solid #8071b3 ;
-}
-#prevBtn:hover{
-    background: #8071b3;
+    color: #fff;
     border: 2px solid #8071b3 ;
 }
 #nextBtn{
     right: 0;
 }
-
-/* product line */
-.product-line{
-    margin: 20px 0px;
+.brand{
+    padding: 50px 0px;
 }
-.product-line-container{
+/*brand start*/
+.brand-top{
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
-.product-line-content{
-    width: 30%;
+.brand-bottom{
+    padding: 10px;
+}
+.brand-left-col{
+    width: 40%;
+    padding: 20px;
+}
+.brand-name{
+    color: #8071b3;
+    font-size: 3rem;
+}
+.brand-content{
+    font-size: 18px;
+}
+.brand-right-col{
     overflow: hidden;
+    width: 55%;
 }
-.product-line-content img{
+.brand-right-col-container{
+    display: flex;
     width: 100%;
-    height: 100%;
-    transition: 0.2s ease-in-out;
 }
-.product-line-content:hover img{
+.brand-slider-img-container{
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+}
+.brand-slider-img-container:hover img{
     transform: scale(1.1);
 }
-@media only screen and (max-width: 700px) {
-    .product-line-container{
-        flex-direction: column;
-        justify-content: none;
-        align-items: center;
-    }
-    .product-line-content{
-        width: 100%;
-    }
-    .product-line-content:nth-child(2){
-        margin: 20px 0px;
-    }
-
+.brand-slider-img-container img{
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+    width: 100%;
 }
-/*newest product */
-.view-all{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-}
-.view-all a{
-    color: #000;
-    transition: 0.2s ease-in-out;
-}
-.view-all a:hover{
-    color: #8071b3;
-}
-.newest-product{
-    padding: 20px 0px;
+/*brand end*/
+/*akko start*/
+.akko, .akko .wrapper, .razer, .razer .wrapper{
     background: #f5f5f5;
 }
-.newest-product .wrapper{
-    background: #f5f5f5;
+.akko .brand-top, .razer .brand-top{
+    flex-direction: row-reverse;
 }
-.newest-product-container .product-row:nth-child(2){
-    margin-top: 20px;
+.akko .brand-left-col, .razer .brand-left-col{
+    text-align: end;
 }
+.akko .brand-bottom, .razer .brand-bottom{
+    text-align: end;
+}
+/*akko end*/
+/* top seller start */
+/* top seller end */
 /*product*/
 .product-row{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    overflow: hidden;
 }
 .product{
-    width: 22%;
-    display: inline-block;
+    width: 350px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .product-img{
     overflow: hidden;
-    display: inline-flex;
     width: 100%;
+    height: 300px;
 }
 .product-img img{
+    object-fit: contain;
     width: 100%;
     height: 100%;
     transition: 0.2s ease-in-out;
@@ -149,34 +177,73 @@ a{
     transform: scale(1.1);
 }
 .product-info{
+    width: 100%;
     padding: 10px;
 }
 .product-name{
+    font-size: 15px;
+    height: 70px;
     overflow: hidden;
-    font-size: 14px;
-    height:  100px;
 }
 .product-price{
-    font-size: 14px;
     color: #8071b3;
+    font-size: 15px;
+    display: flex;
+    height: 30px;
+    align-items: center;
 }
-@media only screen and (max-width: 950px) {
+.product-discount{
+    padding: 5px;
+    margin-left: 5px;
+    background: #8071b3;
+    color: #fff;
+}
+@media only screen and (max-width: 1680px){
     .product{
-        width: 25%;
+        width: 300px;
     }
 }
-@media only screen and (max-width: 800px) {
-    .product-info{
-        padding: 5px;
+@media only screen and (max-width: 1450px){
+    .product{
+        width: 250px;
+    }
+    .product-img{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .product-info div{
+        font-size: 14px;
     }
     .product-name{
-        height: 70px;
+        height: 65px;
+        margin-bottom: 20px;
     }
-    .product-name, .product-price{
+    .product-img{
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .product-img{
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .product-img{
+        height: 100px;
+    }
+    .product-info div{
         font-size: 12px;
+    }
+    .product-name{
+        height: 50px;
+        margin-bottom: 20px;
     }
 }
 /*product end*/
+.discount{
+    margin-bottom: 40px;
+}
 /* top seller */
 .top-seller{
     padding: 20px 0px;
@@ -186,3 +253,13 @@ a{
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 1200px){
+    .tittle{
+        font-size: 2.5rem ;
+    }
+}
+@media only screen and (max-width: 650px){
+    .tittle{
+        font-size: 2rem ;
+    }
+}
