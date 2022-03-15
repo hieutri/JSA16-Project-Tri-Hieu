@@ -114,7 +114,7 @@
     align-items: center;
     height: 50px;
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
 }
 .cart-product-img img{
@@ -128,6 +128,11 @@
     color: #fff;
     cursor: pointer;
     border: none;
+}
+.cart-empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*cart product end*/
 .price-searcher{
