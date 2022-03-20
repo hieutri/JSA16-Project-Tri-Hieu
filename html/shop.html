@@ -11,40 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <!-- header start -->
-    <div class="form" id="login-form">
-        <div class="form-container">
-            <h1 class="form-tittle">Login</h1>
-            <div class="form-input-container">
-                <input name="email" id="login-email" type="email" placeholder="Enter your email" />
-                <input name="password" id="login-password" type="password" placeholder="Enter your password" />
-            </div>
-            <button id="login-sumbit" type="submit" class="form-sumbit">Login</button>
-            <div class="form-question">
-                Forgot your password? <a href="#">Click here</a>
-            </div>
-            <div class="form-question">
-                Don't have an account? <a id="register">Register</a>
-            </div>
-        </div>
-    </div>
-    <div class="form" id="register-form">
-        <div class="form-container">
-            <h1 class="form-tittle">Register</h1>
-            <div class="form-input-container">
-                <input id="register-email" type="email" placeholder="Enter your email" />
-                <input id="register-password" type="password" placeholder="Enter your password" />
-            </div>
-            <button id="register-sumbit" class="form-sumbit">Register</button>
-            <div class="form-question">
-                Already have an account? <a id="login">Login</a>
-            </div>
-        </div>
-    </div>
 
     <div class="header">
         <div class="header-contact-info">
@@ -62,18 +34,15 @@
 
         <div class="header-search">
             <div class="wrapper">
-                <h1>
-                    <p style="color: #8071b3">KB</p>
-                    Shop
-                </h1>
+                <h1><p style="color: #8071b3">KB</p>Shop</h1>
 
                 <div class="search">
-                    <input id="search-bar" type="text" placeholder="Search..."/>
+                    <input id="search-bar" type="text" placeholder="Search..." />
                     <button id="search-sumbit"><i class="fa fa-search"></i></button>
                 </div>
 
                 <div class="header-icon-container">
-                    <a onclick="openLogin()"><i class="fa fa-user"></i></a>
+                    <a href="login.html"><i class="fa fa-user"></i></a>
                     <a id="cart"><i class="fa fa-shopping-cart"></i></a>
                 </div>
 
@@ -131,43 +100,51 @@
                 </div>
 
                 <div class="category-choice-container">
-                    <p onclick="filterSelection('all')"  id="view-all-product">View All Product</p>
+                    <p onclick="filterSelection('all')" id="view-all-product">View All Product</p>
                 </div>
 
                 <div class="category-choice-container">
-                    <p onclick="dropDownTrigger('brand','brand-content','brand-arrow')" id="brand">Brand <i class="fa fa-angle-right brand-arrow"></i></p>
+                    <p onclick="dropDownTrigger('brand','brand-content','brand-arrow')" id="brand">Brand <i
+                            class="fa fa-angle-right brand-arrow"></i></p>
 
                     <div class="brand-content dropdown">
-                        <p onclick="filterSelection('keychron')"  id="keychron-selection">Keychron</p>
+                        <p onclick="filterSelection('keychron')" id="keychron-selection">Keychron</p>
 
-                        <p onclick="filterSelection('akko')"  id="akko-selection">Akko <i class="fa fa-angle-right dropdown-trigger"></i></p>
+                        <p onclick="filterSelection('akko')" id="akko-selection">Akko <i
+                                class="fa fa-angle-right dropdown-trigger"></i></p>
                         <div class="akko-content dropdown">
-                            <p onclick="filterSelection('black-gold')"  id="black-gold-selection">Black Gold</p>
-                            <p onclick="filterSelection('black-pink')"  id="black-pink-selection">Black Pink</p>
-                            <p onclick="filterSelection('dracula-castle')"  id="dracula-castle-selection">Dracula Castle</p>
-                            <p onclick="filterSelection('dragon-ball')"  id="dragon-ball-selection">Dragon Ball</p>
-                            <p onclick="filterSelection('matcha-red-bean')"  id="matcha-red-bean-selection">Matcha Red Bean</p>
-                            <p onclick="filterSelection('midnight')"  id="midnight-selection">Midnight</p>
-                            <p onclick="filterSelection('neon')"  id="neon-selection">Neon</p>
-                            <p onclick="filterSelection('ocean-star')"  id="ocean-star-selection">Ocean Star</p>
-                            <p onclick="filterSelection('slient')"  id="slient-selection">Slient</p>
-                            <p onclick="filterSelection('steam-engine')"  id="steam-engine-selection">Steam Engine</p>
-                            <p onclick="filterSelection('world-tour-london')"  id="world-tour-london-selection">World Tour London</p>
-                            <p onclick="filterSelection('world-tour-tokyo')"  id="world-tour-tokyo-selection">World Tour Tokyo</p>
+                            <p onclick="filterSelection('black-gold')" id="black-gold-selection">Black Gold</p>
+                            <p onclick="filterSelection('black-pink')" id="black-pink-selection">Black Pink</p>
+                            <p onclick="filterSelection('dracula-castle')" id="dracula-castle-selection">Dracula Castle
+                            </p>
+                            <p onclick="filterSelection('dragon-ball')" id="dragon-ball-selection">Dragon Ball</p>
+                            <p onclick="filterSelection('matcha-red-bean')" id="matcha-red-bean-selection">Matcha Red
+                                Bean</p>
+                            <p onclick="filterSelection('midnight')" id="midnight-selection">Midnight</p>
+                            <p onclick="filterSelection('neon')" id="neon-selection">Neon</p>
+                            <p onclick="filterSelection('ocean-star')" id="ocean-star-selection">Ocean Star</p>
+                            <p onclick="filterSelection('slient')" id="slient-selection">Slient</p>
+                            <p onclick="filterSelection('steam-engine')" id="steam-engine-selection">Steam Engine</p>
+                            <p onclick="filterSelection('world-tour-london')" id="world-tour-london-selection">World
+                                Tour London</p>
+                            <p onclick="filterSelection('world-tour-tokyo')" id="world-tour-tokyo-selection">World Tour
+                                Tokyo</p>
                         </div>
 
-                        <p onclick="filterSelection('logitech')"  id="logitech-selection">Logitech</p>
+                        <p onclick="filterSelection('logitech')" id="logitech-selection">Logitech</p>
 
-                        <p onclick="filterSelection('razer')"  id="razer-selection">Razer <i class="fa fa-angle-right" dropdown-trigger></i></p>
+                        <p onclick="filterSelection('razer')" id="razer-selection">Razer <i class="fa fa-angle-right"
+                                dropdown-trigger></i></p>
                         <div class="razer-content dropdown">
-                            <p onclick="filterSelection('blackwidow')"  id="razer-blackwidow-selection">Blackwidow</p>
-                            <p onclick="filterSelection('huntsman')"  id="razer-huntsman-selection">Huntsman</p>
+                            <p onclick="filterSelection('blackwidow')" id="razer-blackwidow-selection">Blackwidow</p>
+                            <p onclick="filterSelection('huntsman')" id="razer-huntsman-selection">Huntsman</p>
                         </div>
 
-                        <p onclick="filterSelection('corsair')"  id="corsair-selection">Corsair <i class="fa fa-angle-right dropdown-trigger"></i></p>
+                        <p onclick="filterSelection('corsair')" id="corsair-selection">Corsair <i
+                                class="fa fa-angle-right dropdown-trigger"></i></p>
                         <div class="corsair-content dropdown">
                             <p onclick="filterSelection('k63')" id="corsair-k63-selection">Corsair K63</p>
-                            <p onclick="filterSelection('k68')"  id="corsair-k68-selection">Corsair K68</p>
+                            <p onclick="filterSelection('k68')" id="corsair-k68-selection">Corsair K68</p>
                             <p onclick="filterSelection('k70')" id="corsair-k70-selection">Corsair K70</p>
                             <p onclick="filterSelection('k95')" id="corsair-k95-selection">Corsair K95</p>
                             <p onclick="filterSelection('k100')" id="corsair-k100-selection">Corsair K100</p>

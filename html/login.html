@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/login-register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- header start -->
+    <div class="header">
+
+        <div class="header-contact-info">
+            <div class="wrapper">
+                <div class="phone-number">
+                    <i class="fa fa-phone"></i>
+                    <p>098 169 1206</p>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <p>kbshop@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-search">
+            <div class="wrapper">
+
+                <h1><p style="color:  #8071b3;">KB</p>Shop</h1>
+
+                <div class="search">
+                    <input id="search-bar"  type="text" placeholder="Search...">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+
+                <div class="header-icon-container">
+                    <a href="login.html"><i class="fa fa-user"></i></a>
+                    <a id="cart"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                
+                <div class="responsive-navigation-button">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-content">
+                <p>cart</p>
+                <hr>
+                <div class="cart-product-info">
+                    Your cart is empty.
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            
+            <div class="wrapper">
+                <a href="./homepage.html">HOME</a>
+                <a href="./shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SUPPORT</a>
+            </div>
+            
+        </div>
+
+     
+    </div>
+    <div class="header-responsive-navigation">
+        <span id="close"><i class="fa fa-close"></i></span>
+        <div class="header-responsive-navigation-container">
+            <div class="header-responsive-search">
+                <input type="text" placeholder="Search...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="header-responsive-menu">
+                <a href="./homepage.html">HOME</a>
+                <a href="./shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SUPPORT</a>
+            </div>
+            <div class="header-responsive-icon-container">
+                <a href="/signin-up page/signin.html" id="login"><i class="fa fa-user"></i></a>
+                <a id="cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- form start-->
+    <div class="form-container">
+        <form id="login">
+
+            <div class="row tittle">
+                <h2>Login</h2>
+            </div>
+
+            <div class="row row-email">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="row row-password">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+
+            <div class="row">
+                <button type="sumbit" id="sumbit">Login</button>
+            </div>
+
+            <p class="question">Don't have an account? <a href="register.html">Register</a></p>
+
+        </form>
+    </div>
+    <!-- form end-->
+    <!-- footer start-->
+
+    <!-- footer end-->
+
+
+    <script src="../javascript/login.js"></script>
+</body>
+</html>

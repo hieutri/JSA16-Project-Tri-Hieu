@@ -1,0 +1,33 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container form{
+    background: #8071b3;
+    padding: 3rem;
+    border-radius: 20px;
+}
+.row{
+    text-align: center;
+    margin: 10px 0px;
+}
+.tittle{
+    font-size: 2rem;
+    color: #fff;
+}
+.row input{
+    padding: 5px 7px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    background: none;
+}
+.row button{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1rem;
+    border: none;
+}
