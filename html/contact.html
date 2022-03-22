@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/login-register.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
-    <!-- header start -->
+    
+    <!--header start-->
     <div class="header">
 
         <div class="header-contact-info">
@@ -89,38 +90,54 @@
                 <a href="#">SUPPORT</a>
             </div>
             <div class="header-responsive-icon-container">
-                <a href="/signin-up page/signin.html"><i class="fa fa-user"></i></a>
+                <a href="/signin-up page/signin.html" id="login"><i class="fa fa-user"></i></a>
                 <a id="cart"><i class="fa fa-shopping-cart"></i></a>
             </div>
         </div>
     </div>
-    <!-- header end -->
-    <!-- form start-->
-    <div class="form-container">
-        <form id="login">
-
-            <div class="row tittle">
-                <h2>Login</h2>
+    <!--header end-->
+    <!--contact start-->
+    <div class="contact">
+        <div class="wrapper">
+            <div class="contact-heading">
+                <h1>Contact With Us</h1>
             </div>
-
-            <div class="row row-email">
-                <input id="email" type="email" name="email" placeholder="Email" oninvalid="prompt();" required>
+            <div class="contact-p">
+                <p>We will respond to your requests within 24 hours</p>
             </div>
+            <div class="contact-form-container">
+                <form class="contact-form">
 
-            <div class="row row-password">
-                <input id="password" type="password" name="password" placeholder="Password" oninvalid="prompt();" required>
+                    <div class="row row-name">
+                        <p class="row-heading">Name</p>
+                        <input type="text" id="contact-name">
+                    </div>
+
+                    <div class="row row-email">
+                        <p class="row-heading">Email</p>
+                        <input type="email" id="contact-email">
+                    </div>
+
+                    <div class="row row-order-id">
+                        <p class="row-heading">Order ID</p>
+                        <input type="text" id="contact-order-id">
+                    </div>
+
+                    <div class="row row-user-feedback">
+                        <p class="row-heading">Message</p>
+                        <textarea name="contact-user-feedback" id="contact-user-feedback"rows="10"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <button type="sumbit" id="contact-sumbit">Sumbit</button>
+                    </div>
+
+                </form>
             </div>
-
-            <div class="row">
-                <button type="sumbit" id="sumbit">Login</button>
-            </div>
-
-            <p class="question">Don't have an account? <a href="register.html">Register</a></p>
-
-        </form>
+        </div>
     </div>
-    <!-- form end-->
-    <!-- footer start-->
+    <!--contact end-->
+    <!--footer start-->
     <div class="footer">
         <div class="wrapper">
             <a href="#" class="fab fa-facebook"></a>
@@ -129,9 +146,10 @@
             <a href="https://twitter.com/playboyhadong" class="fab fa-twitter"></a>
         </div>
     </div>
-    <!-- footer end-->
+    <!--footer end-->
+
 
     <script src="../javascript/general.js"></script>
-    <script src="../javascript/login.js"></script>
+    <script src="../javascript/contact.js"></script>
 </body>
 </html>

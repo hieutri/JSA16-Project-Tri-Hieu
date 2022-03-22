@@ -23,15 +23,10 @@ prevBtn.addEventListener("click", () => {
     }
 })
 
-const cartContainer = document.querySelector(".cart-container")
-document.getElementById("cart").addEventListener('click', () =>{
-    if (cartContainer.style.display == 'inline-block') {
-        cartContainer.style.display = 'none'
-    }
-    else{
-        cartContainer.style.display = 'inline-block'
-   }
-})
 
-const cart = document.querySelector(".cart-product-info")
-
+let productLink = document.querySelectorAll(".product")
+for (let i = 0; i < productLink.length; i++) {
+    productLink[i].addEventListener('click', () =>{
+        document.location = "shop.html"
+    })
+}

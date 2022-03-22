@@ -161,6 +161,7 @@
     width: 350px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    background: #fff;
 }
 .product-img{
     overflow: hidden;
@@ -240,6 +241,11 @@
         margin-bottom: 20px;
     }
 }
+.discount-bottom, .top-seller-bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
 /*product end*/
 .discount{
     margin-bottom: 40px;
@@ -247,8 +253,11 @@
 /* top seller */
 .top-seller{
     padding: 20px 0px;
+    background: #f0f1f4;
 }
-
+.top-seller .wrapper{
+    background: #f0f1f4;
+}
 .top-seller-container .product-row:nth-child(2){
     margin-top: 20px;
 }

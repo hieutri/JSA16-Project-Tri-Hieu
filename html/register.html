@@ -50,27 +50,30 @@
 
             </div>
         </div>
-        <div class="cart-container">
-            <div class="cart-content">
-                <p>cart</p>
-                <hr>
-                <div class="cart-product-info">
-                    Your cart is empty.
-                </div>
-            </div>
-        </div>
         <div class="header-menu">
             
             <div class="wrapper">
                 <a href="./homepage.html">HOME</a>
                 <a href="./shop.html">SHOP</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SUPPORT</a>
+                <a href="./contact.html">CONTACT</a>
             </div>
             
         </div>
 
      
+    </div>
+    <div class="cart-container">
+        <span></span>
+        <div class="cart-content">
+            <div class="cart-header">
+                <i id="cart-closer" class="fa fa-window-close"></i>
+                <p>Cart</p>
+            </div>
+            <div class="black-line"></div>
+            <div class="cart-product-container">
+                <div class="cart-info"></div>
+            </div>
+        </div>
     </div>
     <div class="header-responsive-navigation">
         <span id="close"><i class="fa fa-close"></i></span>
@@ -94,22 +97,22 @@
     <!-- header end -->
     <!-- form start-->
     <div class="form-container">
-        <form id="login">
+        <form id="register">
 
             <div class="row tittle">
                 <h2>Register</h2>
             </div>
 
             <div class="row row-email">
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email">
             </div>
 
             <div class="row row-password">
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
 
             <div class="row">
-                <button type="sumbit" id="sumbit">Register</button>
+                <button type="submit" id="submit">Register</button>
             </div>
 
             <p class="question">Already have an account? <a href="login.html">Login</a></p>
@@ -118,10 +121,17 @@
     </div>
     <!-- form end-->
     <!-- footer start-->
-
+    <div class="footer">
+        <div class="wrapper">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/unlovable___/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCbVKJEOkNl4FIqxtis5CZug" class="fab fa-youtube"></a>
+            <a href="https://twitter.com/playboyhadong" class="fab fa-twitter"></a>
+        </div>
+    </div>
     <!-- footer end-->
 
-
+    <script src="../javascript/general.js"></script>
     <script src="../javascript/register.js"></script>
 </body>
 </html>

@@ -13,9 +13,21 @@ headerResBtn.addEventListener('click', () => {
     }
 })
 
-
-
-
+/*cart start*/
+const cartContainer = document.querySelector(".cart-container")
+const cartContent = document.querySelector('.cart-content');
+document.getElementById("cart").addEventListener('click', () =>{
+    if (cartContainer.style.display == 'flex') {
+        cartContainer.style.display = 'none'
+    }
+    else{
+        cartContainer.style.display = 'flex'
+   }
+})
+document.getElementById("cart-closer").addEventListener('click' , ()=>{
+    cartContainer.style.display = "none"
+})
+/*cart end*/
 
 
 fetch("/json/product-data.json")
@@ -23,7 +35,10 @@ fetch("/json/product-data.json")
     .then((data) => {
         const productContainer = document.querySelector(".product-container");
 
+        
         for (let i = 0; i < data.products.length; i++) {
+            let productsPrice = data.products[i].price
+            console.log(productsPrice);
             if (data.products[i].discount == true) {
                 productContainer.innerHTML += `
          <div class="product-content ${data.products[i].class}">
@@ -101,7 +116,6 @@ fetch("/json/product-data.json")
                 <button class = "cart-remove-btn">Remove</button>
                 </div>
                 `;
-                    alert("Succesfully Added A Product")
                 }
                 let removeProductBtn = document.getElementsByClassName("cart-remove-btn")
                 for (let i = 0; i < removeProductBtn.length; i++) {
@@ -119,3 +133,54 @@ fetch("/json/product-data.json")
         }
         //cart end
     });
+const searchInput = document.getElementById("search-bar");
+document.getElementById("search-sumbit").addEventListener("click", (e) => {
+    search();
+});
+
+/*search start*/
+
+searchInput.addEventListener("keypress", (enter) => {
+    if (enter.key === "Enter") {
+        search()
+    };
+});
+
+function search() {
+    var filter = searchInput.value.toLowerCase();
+    filterSelection(filter);
+}
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("product-content");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    }
+}
+
+function AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
+    }
+}
+
+function RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+/*search end*/
