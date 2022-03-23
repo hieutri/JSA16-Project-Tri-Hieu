@@ -75,8 +75,9 @@ fetch("/json/product-data.json")
         //cart start
         const cartProductContainer = document.querySelector(".cart-product-container");
         let addProductBtn = document.querySelectorAll(".add-to-cart");
-        const cartInfo = document.querySelector(".cart-info")
-        var counter = 1;
+        const cartInfo = document.querySelector(".cart-info");
+        const numberOfProduct = document.getElementById("number-of-product");
+        var counter = 0;
         if (counter == 1) cartInfo.innerHTML = "Your Cart Is Empty";
         else cartInfo.innerHTML = " "
         for (let i = 0; i < data.products.length; i++) {
@@ -93,6 +94,7 @@ fetch("/json/product-data.json")
             }
             addProductBtn[i].addEventListener("click", (event) => {
                 console.log(counter);
+                if(counter == 0) numberOfProduct.innerHTML = ""
                 if (counter > 1) {
                     console.log("counter > 1");
                     cartInfo.innerHTML = " "
@@ -108,6 +110,7 @@ fetch("/json/product-data.json")
                 }
                 else {
                     counter++;
+                    numberOfProduct.innerHTML = counter;
                     cartProductContainer.innerHTML += `
                 <div class="cart-product">
                 <div class="cart-product-img"><img src="${product.productImg}"></div>
@@ -124,7 +127,7 @@ fetch("/json/product-data.json")
                         counter--;
                         console.log(counter);
                         productCounter--;
-                        console.log(productCounter);
+                        numberOfProduct.innerHTML = counter;
                         let btnClicked = event.target;
                         btnClicked.parentElement.remove()
                     });
