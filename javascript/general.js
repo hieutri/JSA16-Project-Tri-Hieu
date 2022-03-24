@@ -14,18 +14,17 @@ headerResBtn.addEventListener('click', () => {
 })
 
 /*cart start*/
-const cartContainer = document.querySelector(".cart-container")
-const cartContent = document.querySelector('.cart-content');
+const opacityBackground = document.querySelector(".opacity-background")
 document.getElementById("cart").addEventListener('click', () =>{
-    if (cartContainer.style.display == 'flex') {
-        cartContainer.style.display = 'none'
+    if (opacityBackground.style.display == 'flex') {
+        opacityBackground.style.display = 'none'
     }
     else{
-        cartContainer.style.display = 'flex'
+        opacityBackground.style.display = 'flex'
    }
 })
 document.getElementById("cart-closer").addEventListener('click' , ()=>{
-    cartContainer.style.display = "none"
+    opacityBackground.style.display = "none"
 })
 /*cart end*/
 
@@ -38,7 +37,6 @@ fetch("/json/product-data.json")
         
         for (let i = 0; i < data.products.length; i++) {
             let productsPrice = data.products[i].price
-            console.log(productsPrice);
             if (data.products[i].discount == true) {
                 productContainer.innerHTML += `
          <div class="product-content ${data.products[i].class}">
@@ -78,6 +76,7 @@ fetch("/json/product-data.json")
         const cartInfo = document.querySelector(".cart-info");
         const numberOfProduct = document.getElementById("number-of-product");
         var counter = 0;
+        var totalPrice = 0;
         if (counter == 1) cartInfo.innerHTML = "Your Cart Is Empty";
         else cartInfo.innerHTML = " "
         for (let i = 0; i < data.products.length; i++) {
@@ -92,15 +91,8 @@ fetch("/json/product-data.json")
                 productName: `${cartProductName}`,
                 productSwitch: `${cartProductSwitch}`,
             }
+            
             addProductBtn[i].addEventListener("click", (event) => {
-                console.log(counter);
-                if(counter == 0) numberOfProduct.innerHTML = ""
-                if (counter > 1) {
-                    console.log("counter > 1");
-                    cartInfo.innerHTML = " "
-                    console.log(cartInfo.innerHTML);
-                    console.log(cartInfo);
-                }
                 productCounter++;
                 event.preventDefault();
                 sessionStorage.setItem(`${cartProductName}`, JSON.stringify(productInfo));
@@ -110,30 +102,56 @@ fetch("/json/product-data.json")
                 }
                 else {
                     counter++;
-                    numberOfProduct.innerHTML = counter;
+                    totalPrice += cartProductPrice;
+                    updateCart()
+                    numberOfProduct.innerHTML = counter; 
                     cartProductContainer.innerHTML += `
                 <div class="cart-product">
+                <div class="cart-product-left">
                 <div class="cart-product-img"><img src="${product.productImg}"></div>
+                </div>
+                <div class="cart-product-right">
+                <div class="cart-product-top">
                 <div class="cart-product-name">${product.productName} (${product.productSwitch} Switch)</div>
-                <div class="cart-product-price">${product.productPrice}$</div>
-                <button class = "cart-remove-btn">Remove</button>
+                </div>
+                <div class="cart-product-bottom">
+                <div class="cart-product-price">${product.productPrice}</div>
+                <div class="product-quantity-container">
+                <input type="number" class="product-quantity" value="${productCounter}"/>
+                </div>
+                <button class="cart-remove-btn">Remove</button>
+                </div>
+                </div>
                 </div>
                 `;
+                console.log(totalPrice);
                 }
                 let removeProductBtn = document.getElementsByClassName("cart-remove-btn")
-                for (let i = 0; i < removeProductBtn.length; i++) {
-                    let btn = removeProductBtn[i]
+                for (let x = 0; x < removeProductBtn.length; x++) {
+                    let btn = removeProductBtn[x]
                     btn.addEventListener("click", (event) => {
                         counter--;
-                        console.log(counter);
                         productCounter--;
+                        totalPrice -= cartProductPrice;
+                        updateCart()
+                        console.log(totalPrice);
                         numberOfProduct.innerHTML = counter;
                         let btnClicked = event.target;
-                        btnClicked.parentElement.remove()
+                        btnClicked.parentElement.parentElement.parentElement.remove()
                     });
                 }
+                let productInCart = document.querySelectorAll(".cart-product")
+                let priceOfProductInCart = document.querySelectorAll(".cart-product-price")
+                for (let i = 0; i < productInCart.length; i++) {
+                    priceOfProductInCart[i].innerText
+                }
+                
+               
             })
+            
         }
+        function updateCart(){
+            document.getElementById("tottal-price").innerHTML = "Total Price: " + totalPrice + "$"       }
         //cart end
     });
 const searchInput = document.getElementById("search-bar");

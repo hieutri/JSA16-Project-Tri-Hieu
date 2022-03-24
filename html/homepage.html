@@ -41,7 +41,9 @@
 
                 <div class="header-icon-container">
                     <a href="login.html"><i class="fa fa-user"></i></a>
-                    <a id="cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a id="cart">
+                        <i class="fa fa-shopping-cart" id="cart-icon"></i>
+                    </a>
                 </div>
                 
                 <div class="responsive-navigation-button">
@@ -62,16 +64,51 @@
 
      
     </div>
-    <div class="cart-container">
+    <div class="opacity-background">
         <span></span>
-        <div class="cart-content">
-            <div class="cart-header">
-                <i id="cart-closer" class="fa fa-window-close"></i>
-                <p>Cart</p>
+        <div class="cart-container">
+
+            <div class="cart-content">
+    
+                <div class="cart-content-top">
+                    <div class="cart-header">
+                        <i id="cart-closer" class="fa fa-times"></i>
+                        <p>Cart</p>
+                    </div>
+                    <div class="black-line"></div>
+                    <div class="cart-product-container">
+                        <div class="cart-info"></div>
+                    </div>
+                </div>
+    
+                <div class="cart-content-bottom">
+                    <div class="black-line"></div>
+                    <div class="cart-checkout-container">
+                        <p id="tottal-price">Total: 139$</p>
+                        <button id="check-out">Check out</button>
+                    </div>
+                </div>
+    
             </div>
-            <div class="black-line"></div>
-            <div class="cart-product-container">
-                <div class="cart-info"></div>
+            
+        </div>
+    </div>
+    <div class="header-responsive-navigation">
+        <span id="close"><i class="fa fa-close"></i></span>
+        <div class="header-responsive-navigation-container">
+            <div class="header-responsive-search">
+                <input type="text" placeholder="Search..." />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="header-responsive-menu">
+                <a href="./homepage.html">HOME</a>
+                <a href="./shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SUPPORT</a>
+            </div>
+            <div class="header-responsive-icon-container">
+                <a href="/signin-up page/signin.html" id="login"><i class="fa fa-user"></i></a>
+                <a id="cart"><i class="fa fa-shopping-cart"></i></a>
             </div>
         </div>
     </div>
