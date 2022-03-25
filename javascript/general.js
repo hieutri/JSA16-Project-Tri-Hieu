@@ -23,6 +23,9 @@ document.getElementById("cart").addEventListener('click', () =>{
         opacityBackground.style.display = 'flex'
    }
 })
+function openCart(){
+        opacityBackground.style.display = 'flex'
+}
 document.getElementById("cart-closer").addEventListener('click' , ()=>{
     opacityBackground.style.display = "none"
 })
@@ -74,13 +77,11 @@ fetch("/json/product-data.json")
         const cartProductContainer = document.querySelector(".cart-product-container");
         let addProductBtn = document.querySelectorAll(".add-to-cart");
         const cartInfo = document.querySelector(".cart-info");
-        const numberOfProduct = document.getElementById("number-of-product");
         var counter = 0;
         var totalPrice = 0;
-        if (counter == 1) cartInfo.innerHTML = "Your Cart Is Empty";
-        else cartInfo.innerHTML = " "
         for (let i = 0; i < data.products.length; i++) {
             let productCounter = 0;
+            let productQuantity = document.getElementById("product-quantity")
             let cartProductImg = data.products[i].img;
             let cartProductName = data.products[i].name;
             let cartProductSwitch = data.products[i].switch;
@@ -98,13 +99,13 @@ fetch("/json/product-data.json")
                 sessionStorage.setItem(`${cartProductName}`, JSON.stringify(productInfo));
                 let product = JSON.parse(sessionStorage.getItem(`${cartProductName}`));
                 if (productCounter > 1) {
-                    alert("This Product Has Already Been Added To Your Cart!")
+                    console.log(productCounter);
+                    document.getElementById("product-quantity").value = productCounter
+                    openCart()
                 }
                 else {
+                    console.log(productCounter);
                     counter++;
-                    totalPrice += cartProductPrice;
-                    updateCart()
-                    numberOfProduct.innerHTML = counter; 
                     cartProductContainer.innerHTML += `
                 <div class="cart-product">
                 <div class="cart-product-left">
@@ -117,41 +118,33 @@ fetch("/json/product-data.json")
                 <div class="cart-product-bottom">
                 <div class="cart-product-price">${product.productPrice}</div>
                 <div class="product-quantity-container">
-                <input type="number" class="product-quantity" value="${productCounter}"/>
+                <input type="number" id="product-quantity"/>
                 </div>
                 <button class="cart-remove-btn">Remove</button>
                 </div>
                 </div>
                 </div>
                 `;
-                console.log(totalPrice);
+                document.getElementById("product-quantity").value = productCounter
+                openCart()
                 }
                 let removeProductBtn = document.getElementsByClassName("cart-remove-btn")
                 for (let x = 0; x < removeProductBtn.length; x++) {
                     let btn = removeProductBtn[x]
                     btn.addEventListener("click", (event) => {
                         counter--;
-                        productCounter--;
-                        totalPrice -= cartProductPrice;
-                        updateCart()
-                        console.log(totalPrice);
-                        numberOfProduct.innerHTML = counter;
+                        productCounter -= productCounter;
+                        console.log(productCounter);
                         let btnClicked = event.target;
                         btnClicked.parentElement.parentElement.parentElement.remove()
                     });
-                }
-                let productInCart = document.querySelectorAll(".cart-product")
-                let priceOfProductInCart = document.querySelectorAll(".cart-product-price")
-                for (let i = 0; i < productInCart.length; i++) {
-                    priceOfProductInCart[i].innerText
                 }
                 
                
             })
             
         }
-        function updateCart(){
-            document.getElementById("tottal-price").innerHTML = "Total Price: " + totalPrice + "$"       }
+         //anh thử add 2 sản phẩm khác giá nhau và remove đi, tổng số tiền nó sẽ khác 0
         //cart end
     });
 const searchInput = document.getElementById("search-bar");
