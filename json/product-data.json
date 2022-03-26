@@ -5,7 +5,7 @@
             "topSelling": true,
             "name": "Akko Black Gold 3068",
             "switch": "Akko CS",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/black gold/3068.jpg"
         },
         {
@@ -13,7 +13,7 @@
             "topSelling": true,
             "name":"Akko Black Gold 3098",
             "switch": "Akko CS",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/black gold/3068.jpg"
         },
         {
@@ -21,7 +21,7 @@
             "topSelling": true,
             "name": "Akko Black Pink 3068",
             "switch": "Akko CS",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/black pink/3068.jpg"
         },
         {
@@ -29,126 +29,126 @@
             "topSelling": true,
             "name":"Akko Black Pink 3084",
             "switch": "Akko CS",
-            "price": 59,
+            "price": 91.99,
             "img": "../images/product-images/akko/black pink/3084.jpg"
         },
         {
             "class": "akko black-pink",
             "name":"Akko Black Pink 3098",
             "switch": "Akko CS",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/black pink/3084.jpg"
         },
         {
             "class": "akko dracula-castle",
             "name":"Akko Dracula Castle 3087",
             "switch": "TTC",
-            "price": 59,
+            "price": 85.99,
             "img": "../images/product-images/akko/dracula castle/3087.jpg"
         },
         {
             "class": "akko dracula-castle",
             "name":"Akko Dracula Castle 3098",
             "switch": "TTC switch",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/dracula castle/3098.jpg"
         },
         {
             "class": "akko dragon-ball",
             "name":"Akko Dragon Ball 3084",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 91.99,
             "img": "../images/product-images/akko/dragon ball/3084.jpg"
         },
         {
             "class": "akko dragon-ball",
             "name":"Akko Dragon Ball Frieza 3108",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/dragon ball/3108frieza.jpg"
         },
         {
             "class": "akko dragon ball",
             "name":"Akko Dragon Ball Vegeta 3108",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/dragon ball/3108vegeta.jpg"
         },
         {
             "class": "matcha-red-bean",
             "name":"Akko Matcha Red Bean 3087",
             "switch": "Gateron switch",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/matcha red bean/3087.jpg"
         },
         {
             "class": "akko matcha-red-bean",
             "name":"Akko Matcha Red Bean 3098",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/matcha red bean/3098.jpg"
         },
         {
             "class": "akko matcha-red-bean",
             "name":"Akko Matcha Red Bean 3108",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 91.99,
             "img": "../images/product-images/akko/matcha red bean/3108.jpg"
         },
         {
             "class": "akko midnight",
             "name":"Akko Midnight 3087",
             "switch": "Akko",
-            "price": 59,
+            "price": 79.99,
             "img": "../images/product-images/akko/midnight/3087.jpg"
         },
         {
             "class": "akko midnight",
             "name":"Akko Midnight 3098",
             "switch": "Akko",
-            "price": 59,
+            "price": 81.99,
             "img": "../images/product-images/akko/midnight/3098.jpg"
         },
         {
             "class": "akko midnight",
             "name":"Akko Midnight 3108",
             "switch": "Akko",
-            "price": 59,
+            "price": 85.99,
             "img": "../images/product-images/akko/midnight/3108.jpg"
         },
         {
             "class": "akko neon",
             "name":"Akko Midnight 3061",
             "switch": "Akko CS Jelly",
-            "price": 59,
+            "price": 85.99,
             "img": "../images/product-images/akko/neon/3061.jpg"
         },
         {
             "class": "akko neon",
             "name":"Akko Midnight 3098",
             "switch": "Akko CS Jelly",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/neon/3098.jpg"
         },
         {
             "class": "akko ocean-star",
             "name":"Akko Ocean Star 3087",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/ocean star/3087.jpg"
         },
         {
             "class": "akko ocean-star",
             "name":"Akko Ocean Star 3098",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 91.99,
             "img": "../images/product-images/akko/ocean star/3098.jpg"
         },
         {
             "class": "akko ocean-star",
             "name":"Akko Ocean Star 3108",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/ocean star/3108.jpg"
         },
         {
@@ -156,7 +156,7 @@
             "topSelling": true,
             "name":"Akko Slient 3068",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 85.99,
             "img": "../images/product-images/akko/slient/3068.jpg"
         },
         {
@@ -164,7 +164,7 @@
             "topSelling": true,
             "name":"Akko Slient 3084",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/slient/3084.jpg"
         },
         {
@@ -172,49 +172,49 @@
             "topSelling": true,
             "name":"Akko Slient 3087",
             "switch": "Akko",
-            "price": 59,
+            "price": 91.99,
             "img": "../images/product-images/akko/slient/3087.jpg"
         },
         {
             "class": "akko slient",
             "name":"Akko Slient 3108",
             "switch": "Akko",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/slient/3108.jpg"
         },
         {
             "class": "akko steam-engine",
             "name":"Akko Steam Engine 3087",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/steam engine/3087.jpg"
         },
         {
             "class": "akko steam-engine",
             "name":"Akko Steam Engine 3108",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/steam engine/3108.jpg"
         },
         {
             "class": "akko world-tour-london",
             "name":"Akko World Tour London 3098",
             "switch": "Cherry MX",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/world tour london/3098.jpg"
         },
         {
             "class": "akko world-tour-london",
             "name":"Akko World Tour London 3087",
             "switch": "Cherry MX",
-            "price": 59,
+            "price": 109.99,
             "img": "../images/product-images/akko/world tour london/3087.jpg"
         },
         {
             "class": "akko world-tour-tokyo",
             "name":"Akko World Tour London 3068",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 89.99,
             "img": "../images/product-images/akko/world tour tokyo/3068.jpg"
         },
         {
@@ -222,7 +222,7 @@
             "topSelling": true,
             "name":"Akko World Tour London 3084",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 91.99,
             "img": "../images/product-images/akko/world tour tokyo/3084.jpg"
         },
         {
@@ -230,63 +230,63 @@
             "topSelling": true,
             "name":"Akko World Tour London 3087",
             "switch": "Akko v2",
-            "price": 59,
+            "price": 95.99,
             "img": "../images/product-images/akko/world tour tokyo/3087.jpg"
         },
         {
             "class": "akko world-tour-tokyo",
             "name":"Akko World Tour London 3108",
             "switch": "Akko",
-            "price": 59,
+            "price": 109.99,
             "img": "../images/product-images/akko/world tour tokyo/3108.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G213",
             "switch": "G Mech-Dome",
-            "price": 49,
+            "price": 49.99,
             "img": "../images/product-images/logitech/g213.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G413",
             "switch": "Romer-G",
-            "price": 79,
+            "price": 79.99,
             "img": "../images/product-images/logitech/g413.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G512",
             "switch": "Logitech GX",
-            "price": 99,
+            "price": 99.99,
             "img": "../images/product-images/logitech/g512.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G610",
             "switch": "Cherry MX",
-            "price": 89,
+            "price": 89.99,
             "img": "../images/product-images/logitech/g610.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G813",
             "switch": "Logitech GL",
-            "price": 139,
+            "price": 139.99,
             "img": "../images/product-images/logitech/G813.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G913",
             "switch": "Logitech GL",
-            "price": 199,
+            "price": 199.99,
             "img": "../images/product-images/logitech/g913.jpg"
         },
         {
             "class": "logitech",
             "name":"Logitech G Pro K/DA",
             "switch": "Logitech GX",
-            "price": 159,
+            "price": 159.99,
             "img": "../images/product-images/logitech/g pro kda.jpg"
         },
         {
@@ -294,35 +294,35 @@
             "topSelling": true,
             "name":"Logitech G Pro X",
             "switch": "Logitech GX",
-            "price": 119,
+            "price": 119.99,
             "img": "../images/product-images/logitech/g pro x.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron C1",
             "switch": "Keychron",
-            "price": 59,
+            "price": 79.99,
             "img":"../images/product-images/keychron/keychron c1.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron C2",
             "switch": "Keychron",
-            "price": 59,
+            "price": 89.99,
             "img":"../images/product-images/keychron/keychron c2.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K1v4",
             "switch": "Gateron low profile",
-            "price": 59,
+            "price": 89.99,
             "img":"../images/product-images/keychron/keychron k1v4.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K2",
             "switch": "Gateron",
-            "price": 59,
+            "price": 89.99,
             "img":"../images/product-images/keychron/keychron k2.jpg"
         },
         {
@@ -330,42 +330,42 @@
             "topSelling": true,
             "name": "Keychron K3v2",
             "switch": "Keychron low profile",
-            "price": 59,
+            "price": 109.99,
             "img":"../images/product-images/keychron/keychron k3v2.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K4v2",
             "switch": "Gateron",
-            "price": 59,
+            "price": 119.99,
             "img":"../images/product-images/keychron/keychron k4v2.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K6",
             "switch": "Gateron",
-            "price": 59,
+            "price": 119.99,
             "img":"../images/product-images/keychron/keychron k6.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K8",
             "switch": "Keychron",
-            "price": 59,
+            "price": 89.99,
             "img":"../images/product-images/keychron/keychron k8.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K10",
             "switch": "Gateron",
-            "price": 59,
+            "price": 99.99,
             "img":"../images/product-images/keychron/keychron k10.jpg"
         },
         {
             "class": "keychron",
             "name": "Keychron K12",
             "switch": "Keychron",
-            "price": 59,
+            "price": 109.99,
             "img":"../images/product-images/keychron/keychron k12.jpg"
         },
         {
