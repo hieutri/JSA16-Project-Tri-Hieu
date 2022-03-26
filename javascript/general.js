@@ -15,22 +15,26 @@ headerResBtn.addEventListener('click', () => {
 
 /*cart start*/
 const opacityBackground = document.querySelector(".opacity-background-container")
-document.getElementById("cart").addEventListener('click', () =>{
+document.getElementById("cart").addEventListener('click', () => {
     if (opacityBackground.style.display == 'flex') {
         opacityBackground.style.display = 'none'
     }
-    else{
+    else {
         opacityBackground.style.display = 'flex'
-   }
+    }
 })
-function openCart(){
-        opacityBackground.style.display = 'flex'
+function openCart() {
+    opacityBackground.style.display = 'flex'
 }
-document.querySelector(".opacity-background").addEventListener("click", ()=>{
+document.querySelector(".opacity-background").addEventListener("click", () => {
     opacityBackground.style.display = "none"
 })
-document.getElementById("cart-closer").addEventListener('click' , ()=>{
+document.getElementById("cart-closer").addEventListener('click', () => {
     opacityBackground.style.display = "none"
+})
+
+document.getElementById("web-logo").addEventListener('click', ()=>{
+    location.replace("homepage.html")
 })
 /*cart end*/
 
@@ -40,7 +44,7 @@ fetch("/json/product-data.json")
     .then((data) => {
         const productContainer = document.querySelector(".product-container");
 
-        
+
         for (let i = 0; i < data.products.length; i++) {
             let productsPrice = data.products[i].price
             if (data.products[i].discount == true) {
@@ -81,6 +85,7 @@ fetch("/json/product-data.json")
         let addProductBtn = document.querySelectorAll(".add-to-cart");
         const cartInfo = document.querySelector(".cart-info");
         var counter = 0;
+        document.getElementById("total-price").innerHTML = "Total Price: 0$"
         var cartProductCounter = 0;
         var totalPrice = 0;
         for (let i = 0; i < data.products.length; i++) {
@@ -96,9 +101,9 @@ fetch("/json/product-data.json")
                 productName: `${cartProductName}`,
                 productSwitch: `${cartProductSwitch}`,
             }
-            
+
             addProductBtn[i].addEventListener("click", (event) => {
-                cartProductCounter++;                
+                cartProductCounter++;
                 event.preventDefault();
                 sessionStorage.setItem(`${cartProductName}`, JSON.stringify(productInfo));
                 let product = JSON.parse(sessionStorage.getItem(`${cartProductName}`));
@@ -107,7 +112,9 @@ fetch("/json/product-data.json")
                     console.log(productCounter);
                 }
                 else {
+                    totalPrice += cartProductPrice
                     productCounter++;
+                    document.getElementById("total-price").innerHTML = "Total Price: " + totalPrice + "$"
                     cartProductContainer.innerHTML += `
                 <div class="cart-product">
                 <div class="cart-product-left">
@@ -118,33 +125,38 @@ fetch("/json/product-data.json")
                 <div class="cart-product-name">${product.productName} (${product.productSwitch} Switch)</div>
                 </div>
                 <div class="cart-product-bottom">
-                <div class="cart-product-price">${product.productPrice}</div>
-                <div class="product-quantity-container">
-                <input type="number" id="product-quantity"/>
-                </div>
+                <div class="cart-product-price">${product.productPrice}$</div>
                 <button class="cart-remove-btn">Remove</button>
                 </div>
                 </div>
                 </div>
                 `;
-                openCart()
+                    openCart()
                 }
                 let removeProductBtn = document.getElementsByClassName("cart-remove-btn")
                 for (let x = 0; x < removeProductBtn.length; x++) {
                     let btn = removeProductBtn[x]
                     btn.addEventListener("click", (event) => {
+                        productCounter--;
                         cartProductCounter--;
+                        totalPrice -= cartProductPrice
+                        document.getElementById("total-price").innerHTML = "Total Price: " + totalPrice + "$"
+                        if(cartProductCounter == 0) document.getElementById("total-price").innerHTML = "Total Price: 0$"
                         console.log(productCounter);
                         let btnClicked = event.target;
                         btnClicked.parentElement.parentElement.parentElement.remove()
                     });
                 }
-                
-               
+
+
             })
-            
+
         }
-         //anh thử add 2 sản phẩm khác giá nhau và remove đi, tổng số tiền nó sẽ khác 0
+            document.getElementById("check-out").addEventListener("click", () => {
+                if(cartProductCounter > 0) location.replace("done.html") 
+                else alert("You haven't added any product to your cart")
+            })
+        //anh thử add 2 sản phẩm khác giá nhau và remove đi, tổng số tiền nó sẽ khác 0
         //cart end
     });
 const searchInput = document.getElementById("search-bar");

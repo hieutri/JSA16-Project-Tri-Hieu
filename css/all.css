@@ -118,6 +118,9 @@
     font-size: 16px;
     font-weight: bold;
 }
+#web-logo{
+    cursor: pointer;
+}
 .header-menu .wrapper a:hover{
     text-decoration: underline;
 }

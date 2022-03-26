@@ -1,0 +1,18 @@
+.purchase-complete{
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.purchase-complete i{
+    font-size: 4rem;
+    color: #8071b3;
+    padding: 1rem;
+    border-radius: 9000px;
+    border: .5rem solid #8071b3;
+}
+.purchase-complete h1{
+    font-size: 3rem;
+    color: #8071b3;
+}

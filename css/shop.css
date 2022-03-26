@@ -103,12 +103,14 @@
 }
 /* shop end */
 /*cart product start*/
+#total-price{
+    margin-bottom: 10px;
+}
 .cart-product-container{
     overflow: hidden;
 }
 .cart-product{
     display: flex;
-    border: 1px solid #000;
     height: 100px;
 }
 .cart-product-left{
